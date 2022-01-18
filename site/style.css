@@ -1,5 +1,84 @@
-h2 {
-	color: deepskyblue;
-	font-size: 80px;
-	text-align: center;
+/*base styling*/
+
+*{
+	box-sizing: border-box;
 }
+
+
+body {
+	font-size: 16px;
+	color:#2D2D2D;
+	background-color: #F6F6F6;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	padding: 0 60px 0 60px;
+}
+
+section {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: 300;	
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 500;	
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 500;	
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 500;	
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #1a73e8;	
+}
+
+
+#logo-img {
+	heigh: 40px;
+	width: 40px;
+	margin: 0 0 10px 0;
+}
+
+#logo-text {
+	font-size: 40px;
+}
+
+div {
+	background-color: #efe5fd; /*testing only, need to delete this color*/
+}
+
+.right-half {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.nav-link {
+	color: #666666;
+	font-size: 14px;
+}
+
+.active {
+	font-weight: 600;
+}
+
+
+
+
+
+
+
