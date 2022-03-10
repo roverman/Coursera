@@ -1,2 +1,2 @@
 # Personal
-This is for Coursera assignments.
+This is for my personal site.
