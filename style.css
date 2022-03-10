@@ -1,0 +1,143 @@
+/*base styling*/
+
+*{
+	box-sizing: border-box;
+}
+
+
+body {
+	font-size: 16px;
+	color:#2D2D2D;
+	background-color: #F6F6F6;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+section {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+h1 {
+	font-size: max(5vw, 50px);
+	font-weight: 300;	
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 100px;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 500;	
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 500;	
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+i {
+	margin: 10px;
+}
+
+hr {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+div {
+	/*background-color: #efe5fd; /*testing only, need to delete this color*/
+}
+
+#logo-img {
+	heigh: 40px;
+	width: 40px;
+	margin: 0 0 10px 0;
+}
+
+#logo-text {
+	font-size: 40px;
+}
+
+.right-half {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+.nav-link {
+	color: #666666;
+	font-size: 14px;
+}
+
+.container-card {
+	padding: 0px;
+}
+
+.intro-card {
+	background-color: white;
+	padding: 40px;
+	text-align: center;
+	height: 100%;
+}
+
+.my-shadow {
+	box-shadow: 0 1.5rem 3rem rgba(0,0,0,.10);
+}
+
+.my-rounded {
+	border-radius: 20px;
+}
+
+.card {
+	border: none;
+	padding: 0;
+}
+
+.card-body {
+	padding: 40px;
+}
+
+.my-purple {
+	background-color: #9a72ef;
+}
+
+.my-orange {
+	background-color: #ff841c;
+}
+
+.wrapper-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 5vw;
+  grid-row-gap: 20px;
+  margin: 0;
+}
+
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-column-gap: 5vw;
+  grid-row-gap: 20px;
+  margin: 0;
+}
+
+#resume-image {
+	width: 100%;
+	background-color: white;
+}
+
+.btn-lg {
+	border-radius: 2rem;
+}
