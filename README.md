@@ -1,2 +1,2 @@
 # Personal
-This is for my personal site.
+This is for my personal site. Welcome!
