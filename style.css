@@ -141,3 +141,18 @@ div {
 .my-rounded {
 	border-radius: 2rem;
 }
+
+.my-width-s {
+	max-width: 240px;
+}
+
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position:  fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	z-index: 1100;
+}
