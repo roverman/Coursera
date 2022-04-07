@@ -156,3 +156,8 @@ div {
 	background-color: white;
 	z-index: 1100;
 }
+
+.my-bg-img {
+	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fsearchengineland.com%2Fgoogle-ads-introduces-ad-strength-indicator-reporting-for-responsive-search-ads-304472&psig=AOvVaw3xsfatlkRwqW3ltJqaOfuP&ust=1649347330059000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNi7p_Xn__YCFQAAAAAdAAAAABAD");
+	height: 100vh;
+}

@@ -13,10 +13,6 @@ $("#copy-promo-button").on("click", function copyToClipboard() {
 
 
 
-
-
-
-
 console.log("Welcome my friend!");
 
 $("#submitPassword").on("click", function validatePassword() {
@@ -24,8 +20,8 @@ $("#submitPassword").on("click", function validatePassword() {
     console.log(getPassword);
     var A = "we";
     var B = "itan";
-    var C = 100;
-    if (getPassword == A+B+"g"+(C+11)*6) {
+    var C = ["5","1","2"];
+    if (getPassword == A+B+"g"+(C[1]+11)*6) {
         console.log("Password correct!");
         // window.location.href = "index.html";
         console.log("hahha");
