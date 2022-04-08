@@ -161,3 +161,30 @@ div {
 	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fsearchengineland.com%2Fgoogle-ads-introduces-ad-strength-indicator-reporting-for-responsive-search-ads-304472&psig=AOvVaw3xsfatlkRwqW3ltJqaOfuP&ust=1649347330059000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNi7p_Xn__YCFQAAAAAdAAAAABAD");
 	height: 100vh;
 }
+
+.my-dark {
+	height:  100vh;
+	background: linear-gradient(-45deg, #9e5037, #a62d5b, #1a7596, #18856b);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+/*.my-dark {
+	height:  100vh;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}*/
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
