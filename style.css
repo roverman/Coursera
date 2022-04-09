@@ -157,17 +157,48 @@ div {
 	z-index: 1100;
 }
 
+/*linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))*/
+
 .my-bg-img {
-	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fsearchengineland.com%2Fgoogle-ads-introduces-ad-strength-indicator-reporting-for-responsive-search-ads-304472&psig=AOvVaw3xsfatlkRwqW3ltJqaOfuP&ust=1649347330059000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNi7p_Xn__YCFQAAAAAdAAAAABAD");
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://scontent.fphl1-1.fna.fbcdn.net/v/t39.30808-6/217452360_3873454532782367_577399502782036034_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=d70cFqEN0qAAX-A0Ykp&_nc_ht=scontent.fphl1-1.fna&oh=00_AT8hvmOc4K79ah9d3KHgVNvS2TuLzGvMP9bz7ux4qtRYQw&oe=6256940D"); 
 	height: 100vh;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
-.my-dark {
-	height:  100vh;
-	background: linear-gradient(-45deg, #9e5037, #a62d5b, #1a7596, #18856b);
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+.blurred-box{
+  position: relative;
+  padding: 16px;
+  width: 300px;
+  height: 400px;
+  background: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+/*  backdrop-filter: blur(5px);*/
 }
+
+.blurred-box:after{
+ content: '';
+ width: 300px;
+ height: 300px;
+ background: inherit; 
+ position: absolute;
+ left: -25px;
+ left position
+ right: 0;
+ top: -25px;  
+ top position 
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
+ filter: blur(20px);
+}
+
+.z-front {
+position: relative;
+ z-index: 1100;  
+}
+	
 
 /*.my-dark {
 	height:  100vh;
@@ -175,7 +206,7 @@ div {
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
 }*/
-
+/*
 
 @keyframes gradient {
     0% {
@@ -187,4 +218,4 @@ div {
     100% {
         background-position: 0% 50%;
     }
-}
+}*/
