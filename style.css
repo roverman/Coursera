@@ -157,7 +157,7 @@ div {
 	z-index: 1100;
 }
 
-/*linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))*/
+/*for password page image*/
 
 .my-bg-img {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://scontent.fphl1-1.fna.fbcdn.net/v/t39.30808-6/217452360_3873454532782367_577399502782036034_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=d70cFqEN0qAAX-A0Ykp&_nc_ht=scontent.fphl1-1.fna&oh=00_AT8hvmOc4K79ah9d3KHgVNvS2TuLzGvMP9bz7ux4qtRYQw&oe=6256940D"); 
@@ -171,27 +171,12 @@ div {
   position: relative;
   padding: 16px;
   width: 300px;
-  height: 400px;
+  height: 100%;
   background: inherit;
   border-radius: 8px;
   overflow: hidden;
-/*  backdrop-filter: blur(5px);*/
-}
-
-.blurred-box:after{
- content: '';
- width: 300px;
- height: 300px;
- background: inherit; 
- position: absolute;
- left: -25px;
- left position
- right: 0;
- top: -25px;  
- top position 
- bottom: 0;
- box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
- filter: blur(20px);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
 }
 
 .z-front {
