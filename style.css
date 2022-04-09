@@ -162,6 +162,7 @@ div {
 .my-bg-img {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://scontent.fphl1-1.fna.fbcdn.net/v/t39.30808-6/217452360_3873454532782367_577399502782036034_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=d70cFqEN0qAAX-A0Ykp&_nc_ht=scontent.fphl1-1.fna&oh=00_AT8hvmOc4K79ah9d3KHgVNvS2TuLzGvMP9bz7ux4qtRYQw&oe=6256940D"); 
 	height: 100vh;
+	position: relative;
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -169,12 +170,13 @@ div {
 
 .blurred-box{
   position: relative;
+  margin-bottom: 50%;
   padding: 16px;
   width: 300px;
   height: 100%;
   background: inherit;
   border-radius: 8px;
-  overflow: hidden;
+/*  overflow: hidden;*/
   backdrop-filter: blur(5px);
   box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
 }
