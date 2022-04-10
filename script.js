@@ -11,19 +11,54 @@ $("#copy-promo-button").on("click", function copyToClipboard() {
 });
 // do not touch the code above
 
-//hide nav bar on scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.top = "0";
-  } else {
-    document.querySelector(".navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 
-//password page below
+
+
+
+
+
+//hide nav bar on scroll
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector(".navbar").style.top = "0";
+//   } else {
+//     document.querySelector(".navbar").style.top = "-50px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
+
+
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+
+
+
+//toggle navbar background transparency after scroll
+// $(window).scroll(function() {
+//   if ($(document).scrollTop() > window.innerHeight-50  ) {
+//     $('nav').removeClass('my-bg-transparent');
+//     $('nav').addClass('my-bg-dark');
+//     console.log(window.scrollY);
+//   }
+// });
+$(window).scroll(function() {
+  if ($(document).scrollTop() > window.innerHeight-40  ) {
+    $('nav').removeClass('my-bg-transparent');
+    $('nav').addClass('my-bg-dark');
+  } else {
+    $('nav').addClass('my-bg-transparent');
+    $('nav').removeClass('my-bg-dark');
+  }
+});
+
+
+
+
+
+
+//password verification
 console.log("Welcome my friend!");
 
 $("#submitPassword").on("click", function validatePassword() {

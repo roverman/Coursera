@@ -76,12 +76,19 @@ div {
 
 
 .nav-link {
-	color: #666666;
+	color: #ccc;
 	font-size: 14px;
+	font-weight: 500;
+	padding-top: 0px;
+	padding-bottom: 0;
 }
 
 .my-bg-dark {
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-bg-transparent {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .my-bg-light {
@@ -211,10 +218,12 @@ a {
   	background-size: cover;
 }
 
+.jumbotron {
+    height: 100vh;
+}
+
 .my-bg-img-home {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://scontent.fphl1-1.fna.fbcdn.net/v/t39.30808-6/217452360_3873454532782367_577399502782036034_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=d70cFqEN0qAAX-A0Ykp&_nc_ht=scontent.fphl1-1.fna&oh=00_AT8hvmOc4K79ah9d3KHgVNvS2TuLzGvMP9bz7ux4qtRYQw&oe=6256940D"); 
-    height: 100vh;
-	overflow-x: show;
 	position: relative;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -223,8 +232,6 @@ a {
 
 .my-bg-black {
     background-color: #111;
-    height: 100vh;
-	overflow-x: show;
 	position: relative;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -253,6 +260,7 @@ position: relative;
 
 .active {
 	color: white;
+	border-bottom:2px solid white;
 }
 
 /*.my-dark {
