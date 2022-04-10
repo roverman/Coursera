@@ -11,8 +11,19 @@ $("#copy-promo-button").on("click", function copyToClipboard() {
 });
 // do not touch the code above
 
+//hide nav bar on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
-
+//password page below
 console.log("Welcome my friend!");
 
 $("#submitPassword").on("click", function validatePassword() {
@@ -43,3 +54,5 @@ $("#submitPassword").on("click", function validatePassword() {
         }, 1000);
     };
 });
+
+

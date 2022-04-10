@@ -16,7 +16,6 @@ body {
 section {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
 }
 
 h1 {
@@ -60,12 +59,12 @@ div {
 }
 
 #logo-img {
-	heigh: 40px;
-	width: 40px;
-	margin: 0 0 10px 0;
+	heigh: 24px;
+	width: 24px;
+	margin: 0 0 3px 0;
 }
 
-#logo-text {
+.logo-text {
 	font-size: 40px;
 }
 
@@ -81,6 +80,14 @@ div {
 	font-size: 14px;
 }
 
+.my-bg-dark {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-bg-light {
+	background-color: rgba(255,255, 255, 0.5) ;
+}
+
 .container-card {
 	padding: 0px;
 }
@@ -92,12 +99,48 @@ div {
 	height: 100%;
 }
 
+.navbar {
+	padding-top:  0px;
+	padding-bottom: 0px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	transition: top 0.3s;
+	z-index: 1100;
+}
+
+ul.nav a:hover { color: #FFF !important; }
+
+a {
+	padding-top: 0px;
+}
+
 .my-shadow {
 	box-shadow: 0 1.5rem 3rem rgba(0,0,0,.10);
 }
 
+.my-middle {
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+}
+
+.my-bottom {
+	position: absolute;
+	bottom: 20px;
+}
+
 .my-rounded {
 	border-radius: 20px;
+}
+
+.btn-circle {
+	width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .card {
@@ -168,6 +211,28 @@ div {
   	background-size: cover;
 }
 
+.my-bg-img-home {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://scontent.fphl1-1.fna.fbcdn.net/v/t39.30808-6/217452360_3873454532782367_577399502782036034_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=d70cFqEN0qAAX-A0Ykp&_nc_ht=scontent.fphl1-1.fna&oh=00_AT8hvmOc4K79ah9d3KHgVNvS2TuLzGvMP9bz7ux4qtRYQw&oe=6256940D"); 
+    height: 100vh;
+	overflow-x: show;
+	position: relative;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.my-bg-black {
+    background-color: #111;
+    height: 100vh;
+	overflow-x: show;
+	position: relative;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+site { overflow-x: hidden !important;}
+
 .blurred-box{
   position: relative;
   margin-bottom: 50%;
@@ -185,7 +250,10 @@ div {
 position: relative;
  z-index: 1100;  
 }
-	
+
+.active {
+	color: white;
+}
 
 /*.my-dark {
 	height:  100vh;
