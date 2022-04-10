@@ -19,14 +19,13 @@ section {
 }
 
 h1 {
-	font-size: max(6vw, 60px);
+	font-size: max(6vw, 80px);
 	font-weight: 300;	
 }
 
 h2 {
 	font-size: 50px;
-	font-size: max(5vw, 50px);
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h3 {
@@ -52,10 +51,6 @@ i {
 hr {
 	margin-top: 60px;
 	margin-bottom: 60px;
-}
-
-div {
-	/*background-color: #efe5fd; /*testing only, need to delete this color*/
 }
 
 #logo-img {
@@ -133,6 +128,11 @@ a {
     align-items: center;
 }
 
+.my-middle2 {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 .my-bottom {
 	position: absolute;
 	bottom: 20px;
@@ -142,12 +142,8 @@ a {
 	border-radius: 20px;
 }
 
-.btn-circle {
-	width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    font-size: 24px;
-    text-align: center;
+a.btn-icon:hover {
+	background-color: rgba(255,255, 255, 0.1);
 }
 
 .card {
@@ -157,6 +153,11 @@ a {
 
 .card-body {
 	padding: 40px;
+}
+
+.home-img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .my-purple {
@@ -228,6 +229,16 @@ a {
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+}
+
+.my-bg-img-about {
+	background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/199391613_3805041139623707_6896210121481418547_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BOYPYUNgscEAX_k0Cv4&_nc_ht=scontent-lga3-2.xx&oh=00_AT_gDAbOxhJW9-5J31Tx5GbwC5zbS8RH-0R29PMVLJtz4g&oe=6278BEA5");
+	position: fixed;
+	width: 100%;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: -1;
 }
 
 .my-bg-black {
