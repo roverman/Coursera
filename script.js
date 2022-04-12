@@ -43,15 +43,20 @@ console.log(window.innerWidth);
 //     console.log(window.scrollY);
 //   }
 // });
-$(window).scroll(function() {
-  if ($(document).scrollTop() > window.innerHeight-40  ) {
-    $('nav').removeClass('my-bg-transparent');
-    $('nav').addClass('my-bg-dark');
-  } else {
-    $('nav').addClass('my-bg-transparent');
-    $('nav').removeClass('my-bg-dark');
-  }
-});
+
+
+
+//For amazing scroll full vh navbar hide
+// $(window).scroll(function() {
+//   if ($(document).scrollTop() > window.innerHeight-40  ) {
+//     $('nav').removeClass('my-bg-transparent');
+//     $('nav').addClass('my-bg-dark');
+//   } 
+//   else {
+//     $('nav').addClass('my-bg-transparent');
+//     $('nav').removeClass('my-bg-dark');
+//   }
+// });
 
 
 
