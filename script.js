@@ -35,18 +35,7 @@ console.log(window.innerWidth);
 
 
 
-//toggle navbar background transparency after scroll
-// $(window).scroll(function() {
-//   if ($(document).scrollTop() > window.innerHeight-50  ) {
-//     $('nav').removeClass('my-bg-transparent');
-//     $('nav').addClass('my-bg-dark');
-//     console.log(window.scrollY);
-//   }
-// });
-
-
-
-//For amazing scroll full vh navbar hide
+//!!!For amazing scroll full vh navbar hide
 // $(window).scroll(function() {
 //   if ($(document).scrollTop() > window.innerHeight-40  ) {
 //     $('nav').removeClass('my-bg-transparent');
@@ -57,7 +46,16 @@ console.log(window.innerWidth);
 //     $('nav').removeClass('my-bg-dark');
 //   }
 // });
-
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 40  ) {
+    $('nav').removeClass('my-bg-transparent');
+    $('nav').addClass('my-bg-dark');
+  } 
+  else {
+    $('nav').addClass('my-bg-transparent');
+    $('nav').removeClass('my-bg-dark');
+  }
+});
 
 
 

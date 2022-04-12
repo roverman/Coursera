@@ -19,7 +19,7 @@ section {
 }
 
 h1 {
-	font-size: max(6vw, 80px);
+	font-size: max(6vw, 90px);
 	font-weight: 300;	
 }
 
@@ -30,7 +30,7 @@ h2 {
 
 h3 {
 	font-size: 36px;
-	font-weight: 500;	
+	font-weight: 400;	
 }
 
 h4 {
@@ -63,9 +63,17 @@ hr {
 	background-color: #292b2c !important;
 }
 
-.top-margin {
-	margin-top: 80px;
+.top-padding {
+	padding-top: 80px;
+}
+
+.my-margin {
 	margin-bottom: 40px;
+}
+
+.my-mtb {
+	margin-top: 32px;
+	margin-bottom: 32px;
 }
 
 .logo-text {
@@ -78,9 +86,13 @@ hr {
 	margin-bottom: auto;
 }
 
+.full-width {
+	width: 100%;
+}
+
 
 .nav-link {
-	color: #808080;
+	color: #ddd;
 	font-size: 14px;
 	font-weight: 500;
 	padding-top: 0px;
@@ -121,7 +133,7 @@ hr {
 	top: 0;
 	width: 100%;
 	height: 40px;
-	transition: top 0.3s;
+	transition: top 0.3s, background-color 0.3s;
 	z-index: 1100;
 }
 
@@ -148,7 +160,7 @@ a {
 
 .my-bottom {
 	position: absolute;
-	bottom: 20px;
+	bottom: 0;
 }
 
 .my-rounded {
@@ -157,6 +169,10 @@ a {
 
 a.btn-icon:hover {
 	background-color: rgba(255,255, 255, 0.1);
+}
+
+.btn-icon {
+	font-size: 20px;
 }
 
 .card {
