@@ -256,14 +256,17 @@ a.btn-icon:hover {
 
 .jumbotron {
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .my-bg-vid {
 	position: absolute;
-	bottom: -15px;
+	bottom: -100px;
 	min-width: 100%;
 	min-height: 100vh;
 	z-index: -100;
+	overflow-x: hidden;
 }
 
 .vid-overlay {
