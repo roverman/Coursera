@@ -158,6 +158,12 @@ a {
 	margin-bottom: auto;
 }
 
+.my-middle3 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
 .my-bottom {
 	position: absolute;
 	bottom: 0;
@@ -250,6 +256,23 @@ a.btn-icon:hover {
 
 .jumbotron {
     height: 100vh;
+}
+
+.my-bg-vid {
+	position: absolute;
+	bottom: -15px;
+	min-width: 100%;
+	min-height: 100vh;
+	z-index: -100;
+}
+
+.vid-overlay {
+	position:absolute;
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+	opacity: 60%;
+	z-index: -1;
 }
 
 .my-bg-img-home {

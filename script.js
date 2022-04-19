@@ -13,10 +13,6 @@ $("#copy-promo-button").on("click", function copyToClipboard() {
 
 
 
-
-
-
-
 //hide nav bar on scroll
 // var prevScrollpos = window.pageYOffset;
 // window.onscroll = function() {
@@ -94,3 +90,6 @@ $("#submitPassword").on("click", function validatePassword() {
 });
 
 
+
+//background video playback speed adjustment
+document.querySelector('video').playbackRate = 0.3;
