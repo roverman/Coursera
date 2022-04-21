@@ -63,10 +63,10 @@ console.log("Welcome my friend!");
 $("#submitPassword").on("click", function validatePassword() {
     var getPassword = document.querySelector("#inputPassword").value;
     console.log(getPassword);
-    var A = "we";
-    var B = "itan";
+    var A = "w";
+    var B = "t";
     var C = ["5","1","2"];
-    if (getPassword == A+B+"g"+(C[1]+11)*6) {
+    if (getPassword == A+B+(C[1]+11)*6) {
         console.log("Password correct!");
         // window.location.href = "index.html";
         console.log("hahha");
