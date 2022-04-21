@@ -246,7 +246,7 @@ a.btn-icon:hover {
 /*for password page image*/
 
 .my-bg-img {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/sky-night.jpg"); 
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/sky-night.JPG"); 
 	height: 100vh;
 	position: relative;
 	background-position: center;
