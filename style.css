@@ -240,12 +240,13 @@ a.btn-icon:hover {
 	justify-content: center;
 	align-items: center;
 	z-index: 1100;
+	background-color: black;
 }
 
 .logo-rotate {
 	width: 60px;
 	height: 60px;
-	-webkit-animation:spin 2s linear infinite;
+	-webkit-animation:spin 2s ease infinite;
 }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
@@ -268,11 +269,10 @@ a.btn-icon:hover {
 
 .my-bg-vid {
 	position: absolute;
-	bottom: -100px;
+	top: 0;
 	min-width: 100%;
-	min-height: 100vh;
+	min-height: 100%;
 	z-index: -100;
-	overflow-x: hidden;
 }
 
 .vid-overlay {
