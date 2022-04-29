@@ -53,6 +53,10 @@ hr {
 	margin-bottom: 60px;
 }
 
+.italic {
+	font-style: italic;
+}
+
 #logo-img {
 	heigh: 24px;
 	width: 24px;
@@ -293,7 +297,7 @@ a.btn-icon:hover {
 }
 
 .my-bg-img-about {
-	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/199391613_3805041139623707_6896210121481418547_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BOYPYUNgscEAX_k0Cv4&_nc_ht=scontent-lga3-2.xx&oh=00_AT_gDAbOxhJW9-5J31Tx5GbwC5zbS8RH-0R29PMVLJtz4g&oe=6278BEA5");
+	background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("img/me-4.jpg");
 	position: fixed;
 	width: 100%;
 	background-position: center;
