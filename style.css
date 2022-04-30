@@ -207,6 +207,7 @@ a.footer-icon:hover {
 .home-img {
 	max-width: 100%;
 	max-height: 100%;
+	margin-bottom: 40px;
 }
 
 .my-purple {
@@ -375,3 +376,16 @@ position: relative;
         background-position: 0% 50%;
     }
 }*/
+
+
+/*Below are styles for projects*/
+.geolink-blue {
+	background-color: #4CADD3;
+}
+
+
+
+
+
+
+
