@@ -185,6 +185,16 @@ a.btn-icon:hover {
 	font-size: 20px;
 }
 
+.footer-icon {
+	font-size: 20px;
+	color: white;
+}
+
+a.footer-icon:hover {
+	color: #0275d8;
+}
+
+
 .card {
 	border: none;
 	padding: 0;
