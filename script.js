@@ -73,7 +73,7 @@ $("#submitPassword").on("click", function validatePassword() {
         document.querySelector("#loader").classList.remove("invisible");
         // window.location.href = "index.html";
         setTimeout(function() {
-            window.location.href = "index.html";
+            window.location.href = "geolink-reports-secured.html";
         }, 2000);
     }
     else {
