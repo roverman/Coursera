@@ -5,12 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" Content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wei Tang - Home</title>
-<!-- 	<link rel="stylesheet" type="text/css" href="css/normalize.css"> --> <!-- This is to normalize safari browser presets -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- calling jquery start -->
-	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-	<!-- calling jquery end -->
 	<script src="https://kit.fontawesome.com/d16fe21231.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,36 +21,47 @@
   gtag('config', 'G-M9SLJCH23H');
 </script>
 </head>
+<body>
 
 
 
-<body class="bg-dark">
-
-	<header class="text-white">
-		<nav class="navbar navbar-dark my-bg-transparent">
-  			<div class="container-fluid">
-    			<a class="navbar-brand" href="index.html">
-      				<img id="logo-img" src="img/logo-white.svg" class="d-inline-block">
-      				<p class="d-none d-sm-inline text-white">WEI TANG</p>
-    			</a>
-  				<ul class="nav justify-content-end" id="nav-menu">
-  					<li class="nav-item">
-  						<a class="nav-link active text-white" href="index.html">PROJECTS</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link" href="resume.html">RESUME</a>
-  					</li>
-  					<li class="nav-item">
-  						<a class="nav-link" href="about.html">ABOUT</a>
-  					</li>
-  				</ul>
-  			</div>
-		</nav>
-	</header>
 
 
+<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/me-2.ipg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/me-2.ipg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/me-2.ipg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
 
-<section>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+
+
+<!-- below is from bootstrap website -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -64,7 +71,7 @@
       <img class="d-block w-100" src="img/me-3.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/aurora.jpg" alt="Third slide">
+      <img class="d-block w-100" src="img/me-4.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -76,23 +83,10 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-</section>
-
 
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
-<!-- calling jquery start -->
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-<!-- calling jquery end -->
 
 </body>
-<footer class="text-center small text-white m-4">
-	<p>
-		<a class="footer-icon" href="mailto: weitang.wayne@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-		<a class="footer-icon" href="https://www.linkedin.com/in/wei-tang-400a2485/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-		<a class="footer-icon" href="https://www.instagram.com/devilrover/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-	</p>
-	<p>&copy 2022 Wei Tang, All Rights Reserved. Designed and Coded with Love.</p>
-</footer>
 </html>

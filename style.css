@@ -383,9 +383,9 @@ position: relative;
 	background-color: #4CADD3;
 }
 
-
-
-
+.carousel-item{
+    min-height: 280px;
+}
 
 
 
