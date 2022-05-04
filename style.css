@@ -80,6 +80,11 @@ hr {
 	margin-bottom: 32px;
 }
 
+.my-padding-tb {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
 .logo-text {
 	font-size: 40px;
 }
