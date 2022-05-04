@@ -308,7 +308,7 @@ a.footer-icon:hover {
 }
 
 .my-bg-img-about {
-	background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("img/me-4.jpg");
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("img/me-4.jpg");
 	position: fixed;
 	width: 100%;
 	background-position: center;
@@ -385,6 +385,8 @@ position: relative;
 
 .carousel-item{
     min-height: 280px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
 }
 
 
