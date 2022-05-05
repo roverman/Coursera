@@ -44,12 +44,12 @@ console.log(window.innerWidth);
 // });
 $(window).scroll(function() {
   if ($(document).scrollTop() > 40  ) {
-    $('nav').removeClass('my-bg-transparent');
-    $('nav').addClass('my-bg-dark');
+    $('nav.smart').removeClass('my-bg-transparent');
+    $('nav.smart').addClass('my-bg-dark');
   } 
   else {
-    $('nav').addClass('my-bg-transparent');
-    $('nav').removeClass('my-bg-dark');
+    $('nav.smart').addClass('my-bg-transparent');
+    $('nav.smart').removeClass('my-bg-dark');
   }
 });
 

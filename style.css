@@ -99,7 +99,6 @@ hr {
 	width: 100%;
 }
 
-
 .nav-link {
 	color: #ddd;
 	font-size: 14px;
@@ -362,6 +361,7 @@ position: relative;
 	border-bottom:2px solid;
 }
 
+
 /*.my-dark {
 	height:  100vh;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -385,7 +385,7 @@ position: relative;
 
 /*Below are styles for projects*/
 .geolink-blue {
-	background-color: #4CADD3;
+	background-color: #cae1ff;
 }
 
 .carousel-item{
@@ -393,6 +393,4 @@ position: relative;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
 }
-
-
 
