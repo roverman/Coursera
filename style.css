@@ -190,12 +190,15 @@ a.btn-icon:hover {
 }
 
 .footer-icon {
+	color: #ddd;
+}
+
+.icon-m {
 	font-size: 20px;
-	color: white;
 }
 
 a.footer-icon:hover {
-	color: #0275d8;
+	color: white
 }
 
 
