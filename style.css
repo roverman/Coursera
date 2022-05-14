@@ -172,6 +172,12 @@ a {
 	align-items: center;
 }
 
+.box {
+	height: 48px;
+	width: 48px;
+
+}
+
 .my-bottom {
 	position: absolute;
 	bottom: 0;
