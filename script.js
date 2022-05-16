@@ -90,6 +90,18 @@ $("#submitPassword").on("click", function validatePassword() {
 });
 
 
+//project page loading
+$(window).on('load', function () {
+$('#loader').hide();
+});
+
 
 //background video playback speed adjustment
 document.querySelector('video').playbackRate = 0.3;
+
+
+//inlucding html to html
+$(function(){
+    $("#my-footer").load("footer.html"); 
+});
+

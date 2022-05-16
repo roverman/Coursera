@@ -80,9 +80,17 @@ hr {
 	margin-bottom: 32px;
 }
 
+.my-margin-t {
+	margin-top: 32px;
+}
+
 .my-padding-tb {
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+
+.my-padding-t {
+	padding-top: 32px;
 }
 
 .logo-text {
@@ -219,7 +227,7 @@ a.footer-icon:hover {
 
 .home-img {
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 100vh;
 	margin-bottom: 40px;
 }
 
