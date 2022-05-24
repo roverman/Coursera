@@ -216,6 +216,16 @@ a.footer-icon:hover {
 }
 
 
+
+.png-icon {
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	margin-top: 10px;
+}
+
+
+
 .card {
 	border: none;
 	padding: 0;
