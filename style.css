@@ -298,8 +298,14 @@ a.footer-icon:hover {
 }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-/*for password page image*/
 
+.jumbotron {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/*for password page image*/
 .my-bg-img {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/sky-night.JPG"); 
 	position: fixed;
@@ -310,6 +316,7 @@ a.footer-icon:hover {
   	z-index: -1;
 }
 
+
 .my-bg-img-about {
 	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("img/me-4.jpg");
 	position: fixed;
@@ -318,12 +325,6 @@ a.footer-icon:hover {
   	background-repeat: no-repeat;
   	background-size: cover;
   	z-index: -1;
-}
-
-.jumbotron {
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
 }
 
 .my-bg-vid {
