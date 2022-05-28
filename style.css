@@ -302,7 +302,7 @@ a.footer-icon:hover {
 
 .my-bg-img {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/sky-night.JPG"); 
-	position: fixed;
+/*	position: fixed;*/
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -413,9 +413,6 @@ position: relative;
 
 
 /*Below are styles for projects*/
-.geolink-blue {
-	background-color: #cae1ff;
-}
 
 .carousel-item{
     min-height: 280px;
