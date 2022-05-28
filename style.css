@@ -302,8 +302,7 @@ a.footer-icon:hover {
 
 .my-bg-img {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/sky-night.JPG"); 
-	height: 100vh;
-	position: relative;
+	position: fixed;
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
