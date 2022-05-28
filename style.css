@@ -302,8 +302,18 @@ a.footer-icon:hover {
 
 .my-bg-img {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/sky-night.JPG"); 
-/*	position: fixed;*/
-	height: 100%;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	z-index: -1;
+}
+
+.my-bg-img-about {
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("img/me-4.jpg");
+	position: fixed;
+	width: 100%;
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -339,16 +349,6 @@ a.footer-icon:hover {
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
-}
-
-.my-bg-img-about {
-	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("img/me-4.jpg");
-	position: fixed;
-	width: 100%;
-	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	z-index: -1;
 }
 
 .minvh {
