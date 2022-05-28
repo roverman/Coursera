@@ -70,11 +70,11 @@ $("#submitPassword").on("click", function validatePassword() {
         console.log("Password correct!");
         // window.location.href = "index.html";
         console.log("hahha");
-        document.querySelector("#loader").classList.remove("invisible");
+        // document.querySelector("#loader").classList.remove("invisible");
         // window.location.href = "index.html";
         setTimeout(function() {
             window.location.href = "geolink-reports-secured.html";
-        }, 2000);
+        }, 0);
     }
     else {
         console.log("Password Wrong!");
