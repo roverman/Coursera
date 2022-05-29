@@ -422,3 +422,15 @@ position: relative;
     -moz-transform: translateZ(0);
 }
 
+.carousel-indicators {
+	bottom: -15px;
+}
+
+.carousel-control-prev {
+	left: -4vw;
+}
+
+.carousel-control-next {
+	right: -4vw;
+}
+
