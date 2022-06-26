@@ -135,6 +135,13 @@ hr {
 	padding: 0px;
 }
 
+.container-footer {
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
 .intro-card {
 	background-color: white;
 	padding: 40px;
