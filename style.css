@@ -440,3 +440,7 @@ position: relative;
 .carousel-control-next {
 	right: -4vw;
 }
+
+.bg-gray {
+	background-color: #EBECED;
+}
