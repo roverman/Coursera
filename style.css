@@ -48,10 +48,10 @@ i {
 	margin: 10px;
 }
 
-hr {
+/*hr {
 	margin-top: 60px;
 	margin-bottom: 60px;
-}
+}*/
 
 .italic {
 	font-style: italic;
@@ -71,17 +71,22 @@ hr {
 	padding-top: 80px;
 }
 
-.my-margin {
-	margin-bottom: 40px;
+.my-margin-b {
+	margin-bottom: 5%;
 }
 
 .my-margin-tb {
-	margin-top: 32px;
-	margin-bottom: 32px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .my-margin-t {
-	margin-top: 32px;
+	margin-top: 5%;
+}
+
+.my-sec {
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 .my-padding-tb {
@@ -91,6 +96,10 @@ hr {
 
 .my-padding-t {
 	padding-top: 32px;
+}
+
+.my-padding-b {
+	padding-bottom: 32px;
 }
 
 .logo-text {
@@ -397,8 +406,12 @@ position: relative;
 
 .active {
 	border-bottom:2px solid;
+	color: white;
 }
 
+.text-center {
+	text-align: center;
+}
 
 /*.my-dark {
 	height:  100vh;
@@ -443,4 +456,27 @@ position: relative;
 
 .bg-gray {
 	background-color: #EBECED;
+}
+
+.bg-vrsignage {
+	background-color: #683CAD;
+}
+
+.brief-icon {
+	font-size: 48px;
+	text-align: center;
+}
+
+.my-fullw {
+	width: 100%;
+}
+
+.toc-item {
+	color: #aaa;
+	margin-right: 16px;
+	text-decoration: none;
+}
+
+a.toc-item:hover {
+	color: white;
 }
