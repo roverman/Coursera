@@ -72,16 +72,16 @@ i {
 }
 
 .my-margin-b {
-	margin-bottom: 5%;
+	margin-bottom: 32px;
 }
 
 .my-margin-tb {
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 32px;
+	margin-bottom: 32px;
 }
 
 .my-margin-t {
-	margin-top: 5%;
+	margin-top: 32px;
 }
 
 .my-sec {
@@ -210,7 +210,7 @@ a {
 }
 
 .my-rounded {
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 a.btn-icon:hover {
@@ -479,4 +479,11 @@ position: relative;
 
 a.toc-item:hover {
 	color: white;
+}
+
+.my-illus {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
 }
