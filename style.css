@@ -409,6 +409,11 @@ position: relative;
 	color: white;
 }
 
+.active2 {
+	border-bottom:2px solid;
+	color: black !important;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -472,13 +477,13 @@ position: relative;
 }
 
 .toc-item {
-	color: #aaa;
-	margin-right: 16px;
+	color: #616A72;
+	margin-right: 24px;
 	text-decoration: none;
 }
 
 a.toc-item:hover {
-	color: white;
+	color: black;
 }
 
 .my-illus {
@@ -486,4 +491,9 @@ a.toc-item:hover {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 5%;
+}
+
+.my-center {
+	margin-right: auto;
+	margin-left: auto;
 }
