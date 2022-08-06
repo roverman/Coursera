@@ -105,3 +105,6 @@ $(function(){
     $("#my-footer").load("footer.html"); 
 });
 
+//video playback speed for highlights
+document.querySelector('#vid-speed').playbackRate = 1.50;
+

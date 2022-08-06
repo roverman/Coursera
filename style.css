@@ -182,7 +182,8 @@ a {
 }
 
 .my-shadow {
-	box-shadow: 0 1.5rem 3rem rgba(0,0,0,.10);
+	box-shadow: 0 2rem 3rem rgba(0,0,0,.10);
+/*	box-shadow: 0 1.5rem 3rem rgba(0,0,0,.10);*/
 }
 
 .my-middle {
@@ -213,9 +214,6 @@ a {
 	bottom: 0;
 }
 
-.my-rounded {
-	border-radius: 8px;
-}
 
 a.btn-icon:hover {
 	background-color: rgba(255,255, 255, 0.1);
@@ -293,7 +291,7 @@ a.footer-icon:hover {
 }
 
 .my-rounded {
-	border-radius: 2rem;
+	border-radius: 8px;
 }
 
 .my-width-s {
