@@ -107,4 +107,5 @@ $(function(){
 
 //video playback speed for highlights
 document.querySelector('#vid-speed').playbackRate = 1.50;
+document.querySelector('video').play();
 
