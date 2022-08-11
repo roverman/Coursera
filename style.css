@@ -502,6 +502,10 @@ a.toc-item:hover {
 	margin-left: auto;
 }
 
+.my-color {
+	color: black;
+}
+
 /*.intense {
 	cursor: url("img/zoom-in.png") 25 25, auto;
 }
