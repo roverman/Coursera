@@ -97,7 +97,7 @@ $('#loader').hide();
 
 
 //background video playback speed adjustment
-document.querySelector('video').playbackRate = 0.3;
+document.querySelector('#bg-vid').playbackRate = 0.3;
 
 
 //inlucding html to html
@@ -108,4 +108,14 @@ $(function(){
 //video playback speed for highlights
 document.querySelector('#vid-speed').playbackRate = 1.50;
 // document.querySelector('video').play();
+
+
+// to allow inline video in iphone
+// func makeUIView(context: Context) -> WKWebView {
+//     let configuration = WKWebViewConfiguration()
+//     configuration.allowsInlineMediaPlayback = true
+
+//     let webView = WKWebView(frame: .zero, configuration: configuration)
+//     return webView
+// }
 
