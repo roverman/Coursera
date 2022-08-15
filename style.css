@@ -52,10 +52,12 @@ li {
 	margin-bottom: 8px;
 }
 
-/*hr {
-	margin-top: 60px;
-	margin-bottom: 60px;
-}*/
+hr {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
 
 .italic {
 	font-style: italic;
@@ -89,6 +91,7 @@ li {
 }
 
 .my-sec {
+	/*padding-top: 3%;*/
 	padding-top: 3%;
 	padding-bottom: 3%;
 }
