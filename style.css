@@ -59,6 +59,10 @@ hr {
 	padding-bottom: 0px;
 }
 
+.bg-light {
+	background-color: #F6F8FC !important;
+}
+
 .text-secondary {
 	color: #1E2125 !important;
 }
