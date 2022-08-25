@@ -97,7 +97,8 @@ $('#loader').hide();
 
 
 //background video playback speed adjustment
-document.querySelector('#bg-vid').playbackRate = 0.3;
+// document.querySelector('#bg-vid').playbackRate = 0.3;
+document.querySelector('#bg-vid').playbackRate = 0.8;
 
 
 //inlucding html to html

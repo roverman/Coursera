@@ -362,6 +362,8 @@ a.footer-icon:hover {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -100;
+	filter: blur(8px);
+  	-webkit-filter: blur(8px);
 }
 
 .vid-overlay {
@@ -369,7 +371,8 @@ a.footer-icon:hover {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 60%;
+/*	opacity: 60%;*/
+	opacity: 30%;
 	z-index: -1;
 }
 
@@ -539,5 +542,9 @@ a.toc-item:hover {
 
 .color-gray {
 	background-color: #E4E4E4;
+}
+
+a.card {
+	text-decoration: None
 }
 
