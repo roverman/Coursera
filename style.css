@@ -545,6 +545,10 @@ a.toc-item:hover {
 }
 
 a.card {
-	text-decoration: None
+	text-decoration: None;
+}
+
+.break-word {
+	overflow-wrap: break-word;
 }
 
