@@ -13,6 +13,8 @@ $("#copy-promo-button").on("click", function copyToClipboard() {
 
 
 
+
+
 //hide nav bar on scroll
 // var prevScrollpos = window.pageYOffset;
 // window.onscroll = function() {
@@ -56,7 +58,6 @@ $(window).scroll(function() {
 
 
 
-
 //password verification
 console.log("Welcome my friend!");
 
@@ -90,15 +91,40 @@ $("#submitPassword").on("click", function validatePassword() {
 });
 
 
+
 //project page loading
 $(window).on('load', function () {
 $('#loader').hide();
 });
 
 
-//background video playback speed adjustment
-// document.querySelector('#bg-vid').playbackRate = 0.3;
-document.querySelector('#bg-vid').playbackRate = 0.8;
+
+
+// table of content nav start
+const sections = document.querySelectorAll("section");
+
+const navLi = document.querySelectorAll("nav .container ul li");
+
+document.onscroll = () => {
+  var current = "";
+
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+// table of content nav end
+
 
 
 //inlucding html to html
@@ -108,15 +134,11 @@ $(function(){
 
 //video playback speed for highlights
 document.querySelector('#vid-speed').playbackRate = 1.50;
-// document.querySelector('video').play();
+
+//background video playback speed adjustment
+document.querySelector('#bg-vid').playbackRate = 0.8;
 
 
-// to allow inline video in iphone
-// func makeUIView(context: Context) -> WKWebView {
-//     let configuration = WKWebViewConfiguration()
-//     configuration.allowsInlineMediaPlayback = true
 
-//     let webView = WKWebView(frame: .zero, configuration: configuration)
-//     return webView
-// }
+
 
