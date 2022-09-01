@@ -101,7 +101,32 @@ $('#loader').hide();
 
 
 // table of content nav start
-const sections = document.querySelectorAll("section");
+// const sections = document.querySelectorAll("section");
+
+// const navLi = document.querySelectorAll("nav .container ul li");
+
+// document.onscroll = () => {
+//   var current = "";
+
+
+//   sections.forEach((section) => {
+//     const sectionTop = section.offsetTop;
+
+//     if (pageYOffset >= sectionTop - 60) {
+//       current = section.getAttribute("id"); }
+//   });
+
+//   navLi.forEach((li) => {
+//     li.classList.remove("active");
+//     if (li.classList.contains(current)) {
+//       li.classList.add("active");
+//     }
+//   });
+// };
+// table of content nav end
+
+// table of content nav start
+const mains = document.querySelectorAll("main");
 
 const navLi = document.querySelectorAll("nav .container ul li");
 
@@ -109,11 +134,11 @@ document.onscroll = () => {
   var current = "";
 
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
+  mains.forEach((main) => {
+    const mainTop = main.offsetTop;
 
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
+    if (pageYOffset >= mainTop - 170) {
+      current = main.getAttribute("id"); }
   });
 
   navLi.forEach((li) => {
@@ -123,7 +148,10 @@ document.onscroll = () => {
     }
   });
 };
-// table of content nav end
+// table of content nav end 70 was the mainTop -
+
+
+
 
 
 
