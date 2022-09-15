@@ -562,6 +562,15 @@ a.card {
 	padding-top: 70px;
 }
 
+.smoke {
+	background-color: WhiteSmoke;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+
+
+
 
 
 
@@ -626,3 +635,6 @@ border: none;
 }
 
 /*Table of content nav end*/
+
+
+
