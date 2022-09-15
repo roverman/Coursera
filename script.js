@@ -137,7 +137,7 @@ document.onscroll = () => {
   mains.forEach((main) => {
     const mainTop = main.offsetTop;
 
-    if (pageYOffset >= mainTop - 170) {
+    if (pageYOffset >= mainTop - 300) {
       current = main.getAttribute("id"); }
   });
 
