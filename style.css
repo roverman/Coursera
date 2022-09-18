@@ -61,6 +61,70 @@ hr {
 	z-index: -1;
 }
 
+/*Table of content nav start*/
+
+nav {
+position: fixed;
+top: 30px;
+/*background-color: #F6F8FC;*/
+width: 100%;
+z-index: 100;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+nav .container {
+margin: auto auto;
+text-align: center;
+border-radius: 0px 0px 8px 8px;
+/*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+nav .container ul {
+margin-bottom: 0;
+}
+
+nav .container ul li {
+display: inline-block;
+border-radius:8px;
+padding: 4px;
+margin-bottom: 4px;
+}
+
+nav .container ul li a {
+text-decoration: none;
+padding: 8px 8px;
+/*color: #ddd;*/
+color: white;
+border: none;
+}
+
+nav .container ul li.active {
+background-color: #3b49df;
+/*background-color: #444;*/
+padding: 4px;
+border-radius: 8px;
+transition: 0.3s;
+border: none;
+}
+
+nav .container ul li.active a {
+color: white;
+}
+
+
+nav .container ul li:hover {
+background-color: dimgray;
+padding: 4px;
+border-radius: 8px;
+transition: 0.3s;
+border: none;
+}
+
+/*Table of content nav end*/
+
+
+
 /*.bg-dark {
 	background-color: dimgray !important;
 }*/
@@ -121,6 +185,10 @@ hr {
 
 .my-padding-b {
 	padding-bottom: 32px;
+}
+
+.my-padding {
+	padding: 32px;
 }
 
 .logo-text {
@@ -563,78 +631,19 @@ a.card {
 }
 
 .smoke {
-	background-color: WhiteSmoke;
+	background-color: /*#F6F8FC*/ whitesmoke;
 	border-radius: 8px;
 	padding: 16px;
+/*	box-shadow: 0 1.5rem 3rem rgba(0,0,0,.10);*/
 }
 
-
-
-
-
-
-
-/*Table of content nav start*/
-
-nav {
-position: fixed;
-top: 30px;
-/*background-color: #F6F8FC;*/
-width: 100%;
-z-index: 100;
-background-color: rgba(0, 0, 0, 0.5);
+.bold {
+	font-weight: 500;
 }
 
-
-nav .container {
-margin: auto auto;
-text-align: center;
-border-radius: 0px 0px 8px 8px;
-/*background-color: rgba(0, 0, 0, 0.5);*/
+.img-box {
+	aspect-ratio : 1 / 1;
+	max-height: 90%;
+	max-width: 90%;
 }
-
-nav .container ul {
-margin-bottom: 0;
-}
-
-nav .container ul li {
-display: inline-block;
-border-radius:8px;
-padding: 4px;
-margin-bottom: 4px;
-}
-
-nav .container ul li a {
-text-decoration: none;
-padding: 8px 8px;
-/*color: #ddd;*/
-color: white;
-border: none;
-}
-
-nav .container ul li.active {
-background-color: #3b49df;
-/*background-color: #444;*/
-padding: 4px;
-border-radius: 8px;
-transition: 0.3s;
-border: none;
-}
-
-nav .container ul li.active a {
-color: white;
-}
-
-
-nav .container ul li:hover {
-background-color: dimgray;
-padding: 4px;
-border-radius: 8px;
-transition: 0.3s;
-border: none;
-}
-
-/*Table of content nav end*/
-
-
 

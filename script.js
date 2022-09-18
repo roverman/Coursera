@@ -74,7 +74,7 @@ $("#submitPassword").on("click", function validatePassword() {
         // document.querySelector("#loader").classList.remove("invisible");
         // window.location.href = "index.html";
         setTimeout(function() {
-            window.location.href = "geolink-reports-secured.html";
+            window.location.href = "myhousing.html";
         }, 0);
     }
     else {
