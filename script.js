@@ -100,6 +100,7 @@ $('#loader').hide();
 
 
 
+
 // table of content nav start
 // const sections = document.querySelectorAll("section");
 
