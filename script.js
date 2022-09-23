@@ -156,7 +156,60 @@ document.onscroll = () => {
 
 
 
-//inlucding html to html
+
+
+// Testing out animations for homepage start
+// Trigger CSS animations on scroll.
+// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
+
+// Looking for a version that also reverses the animation when
+// elements scroll below the fold again?
+// --> Check https://codepen.io/bramus/pen/vKpjNP
+
+jQuery(function($) {
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+        $animatables.each(function(i) {
+       var $animatable = $(this);
+            if (($animatable.offset().top + $animatable.height() - 0.5*$(window).height()) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+            }
+    });
+
+    };
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+    $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
+// Testing out animations for homepage end
+
+
+
+
+
+
+
+
+
+
+
+
+
+//inlucding html to html, could be buggy
 $(function(){
     $("#my-footer").load("footer.html"); 
 });
@@ -166,7 +219,6 @@ document.querySelector('#vid-speed').playbackRate = 1.50;
 
 //background video playback speed adjustment
 document.querySelector('#bg-vid').playbackRate = 0.8;
-
 
 
 
