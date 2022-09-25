@@ -48,6 +48,11 @@ i {
 	margin: 10px;
 }
 
+p>i {
+	margin: 4px;
+}
+
+
 li {
 	margin-bottom: 4px;
 	margin-top: 4px;
@@ -605,12 +610,13 @@ a.toc-item:hover {
 	color: black;
 }
 
-/*.intense {
-	cursor: url("img/zoom-in.png") 25 25, auto;
-}
-*/
 .intense {
 	cursor: zoom-in;
+}
+
+.intense:hover {
+	transform: scale(1.03);
+	transition: 0.3s;
 }
 
 .persona-img {
@@ -676,6 +682,33 @@ a.card {
 	margin-right: auto;
 	max-width: 40vh;
 }
+
+.gallery {
+	aspect-ratio : 1 / 1;
+	overflow: hidden;
+	background-color: yellow;
+
+}
+
+.gallery-item {
+	object-fit: cover;
+	aspect-ratio : 1 / 1;
+	height: 100%;
+}
+
+
+.w-32 {
+	width: 32%;
+	margin-bottom: 2%;
+}
+
+.pop:hover {
+	cursor: zoom-in;
+}
+
+
+
+
 
 
 

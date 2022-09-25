@@ -183,7 +183,7 @@ jQuery(function($) {
     // Check all animatables and animate them if necessary
         $animatables.each(function(i) {
        var $animatable = $(this);
-            if (($animatable.offset().top + $animatable.height() - 0.5*$(window).height()) < offset) {
+            if (($animatable.offset().top + $animatable.height() - 0.7*$(window).height()) < offset) {
         $animatable.removeClass('animatable').addClass('animated');
             }
     });
@@ -200,6 +200,16 @@ jQuery(function($) {
 
 
 
+
+
+// image pop start
+$(function() {
+        $('.pop').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');   
+        });     
+});
+// image pop end
 
 
 
