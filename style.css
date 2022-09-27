@@ -696,6 +696,11 @@ a.card {
 	height: 100%;
 }
 
+.gallery-item:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+} 
+
 
 .w-32 {
 	width: 32%;
@@ -704,6 +709,7 @@ a.card {
 
 .pop:hover {
 	cursor: zoom-in;
+	overflow: hidden;
 }
 
 
