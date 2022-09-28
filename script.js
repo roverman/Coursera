@@ -206,7 +206,9 @@ jQuery(function($) {
 $(function() {
         $('.pop').on('click', function() {
             $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-            $('#imagemodal').modal('show');   
+            var newModalTitle = $(this).find('img').attr('alt');
+            document.querySelector('.modal-title').textContent = newModalTitle;
+            $('#imagemodal').modal('show');  
         });     
 });
 // image pop end

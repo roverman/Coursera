@@ -687,6 +687,7 @@ a.card {
 	aspect-ratio : 1 / 1;
 	overflow: hidden;
 	background-color: yellow;
+	border-radius: 8px;
 
 }
 
@@ -712,13 +713,17 @@ a.card {
 	overflow: hidden;
 }
 
+.font-large {
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
 
 
-
-
-
-
-
+.modal-header {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
 
 
 
