@@ -52,6 +52,9 @@ p>i {
 	margin: 4px;
 }
 
+input:hover {
+	cursor: pointer;
+}
 
 li {
 	margin-bottom: 4px;
@@ -175,8 +178,8 @@ border: none;
 }
 
 .my-sec {
-	padding-top: 3%;
-	padding-bottom: 3%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 .my-padding-tb {
@@ -336,16 +339,12 @@ a.footer-icon:hover {
 	color: white
 }
 
-
-
 .png-icon {
 	width: 40px;
 	height: 40px;
 	margin-right: 8px;
 	margin-top: 10px;
 }
-
-
 
 .card {
 	border: none;
@@ -724,6 +723,33 @@ a.card {
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
+
+.hero-img {
+	margin-bottom: -3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
