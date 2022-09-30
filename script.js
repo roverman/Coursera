@@ -158,7 +158,7 @@ document.onscroll = () => {
 
 
 
-// Testing out animations for homepage start
+// Testing out animations for homepage start!!!!!!!
 // Trigger CSS animations on scroll.
 // Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
 
@@ -183,7 +183,8 @@ jQuery(function($) {
     // Check all animatables and animate them if necessary
         $animatables.each(function(i) {
        var $animatable = $(this);
-            if (($animatable.offset().top + $animatable.height() - 0.7*$(window).height()) < offset) {
+            // if (($animatable.offset().top + $animatable.height() - 0.7*$(window).height()) < offset) {
+            if (($animatable.offset().top + 0.1*$(window).height()) < offset) {
         $animatable.removeClass('animatable').addClass('animated');
             }
     });
@@ -195,7 +196,23 @@ jQuery(function($) {
   $(window).trigger('scroll');
 
 });
-// Testing out animations for homepage end
+// Testing out animations for homepage end!!!!!!!
+
+
+
+
+
+
+
+// Adding animation to all sections start!!!!!!!
+$allSectionDiv = $('main section.bg-white div');
+$allSectionDiv2 = $('main section.bg-dark div')
+console.log($allSectionDiv);
+$allSectionDiv.addClass("animatable fadeInUp");
+$allSectionDiv2.addClass("animatable fadeInUp");
+console.log($allSectionDiv);
+// Adding animation to all sections end!!!!!!!
+
 
 
 
@@ -212,6 +229,8 @@ $(function() {
         });     
 });
 // image pop end
+
+
 
 
 
