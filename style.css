@@ -11,6 +11,7 @@ body {
 	background-color: #F6F6F6;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	/*cursor: url("img/assets/figma_arrow3.cur"), pointer;*/
 }
 
 section {
@@ -765,6 +766,8 @@ a.card {
 
 .fadeDown {
 	font-size: 48px;
+	opacity: 0;
+	animation-delay: 2s;
 	-webkit-animation-name: fadeDown;
     -webkit-animation-duration: 2000ms;
     -webkit-animation-iteration-count: infinite;
@@ -789,24 +792,47 @@ a.card {
         }
     }
 
-#home-icon:hover {
-	background-color: rgba(0, 0, 0, 0.2);
-/*	background-color: transparent;
-	border: 1px solid white;*/
 
+#home-icon:hover {
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	background-color: transparent;
+	/*border: 1px solid white;*/
 }
 
 
+.my-cursor {
+	cursor: url("img/assets/figma_arrow3.cur"), pointer;
+}
 
 
+.moveAround {
+	display: inline-block;
+	position: absolute;
+	-webkit-animation-name: moveAround;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
 
 
+@keyframes moveAround { 
+        0% { 
+            transform: translateY(-100px) translateX(-40px);
+        } 
+
+        30% { 
+            transform: translateY(-200px) translateX(30vw);
+        }
+
+        60% { 
+            transform: translateY(-20px) translateX(40vw);
+        }
 
 
-
-
-
-
+        100% { 
+            transform: translateY(-100px) translateX(-40px);
+        }
+    }
 
 
 
@@ -1402,3 +1428,81 @@ a.card {
 }
 
  /* basic animation end -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tooltip Styles start------------------------------------------------- */
+
+/* Add this attribute to the element that needs a tooltip */
+[title] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[title]:before,
+[title]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[title]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(title);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[title]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[title]:hover:before,
+[title]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Tooltip Styles end------------------------------------------------- */

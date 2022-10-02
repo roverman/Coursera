@@ -204,14 +204,15 @@ jQuery(function($) {
 
 
 
-// Adding animation to all sections start!!!!!!!
-$allSectionDiv = $('main section.bg-white div');
-$allSectionDiv2 = $('main section.bg-dark div')
-console.log($allSectionDiv);
+// Adding fadeInUp animation to all sections start!!!!!!!
+$allSectionDiv = $('main section.bg-white>div');
+$allSectionDiv2 = $('main section.bg-dark>div');
+$carouselItems = $('main section.bg-white div.carousel-item');
+
 $allSectionDiv.addClass("animatable fadeInUp");
 $allSectionDiv2.addClass("animatable fadeInUp");
-console.log($allSectionDiv);
-// Adding animation to all sections end!!!!!!!
+$carouselItems.removeClass("animatable fadeInUp");
+// Adding fadeInUp animation to all sections end!!!!!!!
 
 
 
@@ -236,11 +237,7 @@ $(function() {
 
 
 
-
-
-
-
-//inlucding html to html, could be buggy
+//inlucding html to html, could be buggy!!!!!!!!!!!!!!!!!!!!!!!!!!!
 $(function(){
     $("#my-footer").load("footer.html"); 
 });
