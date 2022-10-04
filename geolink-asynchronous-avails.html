@@ -109,7 +109,7 @@
 			<h3>Introduction</h3>
 			<div>
 			<p>GeoLink is InMarket’s self-service marketing DSP platform. We got user complaints over the long wait time it took to get avails back for campaign setup, and it was so bad that one big client threatened to leave us if we didn’t fix it within the next 3 months.</p>
-			<p>The effort started with research, and ended up with a feature release “asynchronous avails” that <strong>reduced the average campaign setup time from 49 mins to 16 mins, contributed to the 52% revenue growth YOY, and helped the product to win <a class="text-dark" href="https://www.benzinga.com/pressreleases/22/07/n28211152/inmarket-wins-product-of-the-year-at-business-intelligence-groups-2022-sales-and-marketing-technol" target="_blank">"Product of the Year"</a> at Business Intelligence Group's 2022 Sales and Marketing Technology Awards!</strong></p>
+			<p>The effort started with research, and ended up with a feature release “asynchronous avails” that reduced the average campaign setup time from 49 mins to 16 mins, contributed to the 52% revenue growth YOY, and helped the product to win <a class="text-dark" href="https://www.benzinga.com/pressreleases/22/07/n28211152/inmarket-wins-product-of-the-year-at-business-intelligence-groups-2022-sales-and-marketing-technol" target="_blank">"Product of the Year"</a> at Business Intelligence Group's 2022 Sales and Marketing Technology Awards!</p>
 			</div>
 		</div>
 		<div class="left-half col-lg-6 col-md-12 col-sm-12 row">
@@ -310,11 +310,11 @@
 		</div>
 	</div>
 
-	<div class="my-margin-tb">
+	<!-- <div class="my-margin-tb">
 		<h3>Urgency</h3>
 		<p class="text-secondary">The team was planning to reduce avails wait time bit by bit until one large client threatened to leave the platform:</p>
 		<img src="img/geolink-async/existing-0.png" class="my-fullw my-padding-tb" alt="rising issue">
-	</div>
+	</div> -->
 
 	<div class="row my-padding-tb">
 		<p>I met with the PM and came to the initial understanding:</p>
@@ -335,29 +335,29 @@
 
 
 
-<!-- this is internal interview -->
+<!-- this is stakeholder interview -->
 <section class="my-middle my-sec bg-white">
 <div class="container">
 
 	<div class="my-margin-b my-color">
 		<!-- <h4>"How to discover more from the internal team?"</h4> -->
-		<h2>Internal Interview</h2>
+		<h2>Stakeholder Interview</h2>
 	</div>
 
 	<div class="row my-padding-tb">
 
-		<div class="col-lg-4 col-md-12 col-sm-12">
+		<div class="col-lg-6 col-md-12 col-sm-12">
 			<img src="img/geolink-async/interview-1.png" class="my-fullw" alt="internal interview">
 		</div>
 
 
-		<div class="col-lg-8 col-md-12 col-sm-12 my-middle2">
+		<div class="col-lg-6 col-md-12 col-sm-12 my-middle2">
 			<h3>Key Findings</h3>
 			<ul class="text-secondary">
 				<li>The long wait to get avails was <strong>the single biggest complaint from every client.</strong></li>
 				<li>The long wait to get avails was also a huge problem for sales team, because they cannot demo full campaign setup process in real time.</li>
 				<li>Getting avails was <strong>a mandatory step in campaign setup, and took users average 33 mins for the wait!!!</strong></li>
-				<li>The engineers were improving the system to get avails sooner with about 10-20% less wait time, but still too long for the users.</li>
+				<li>The engineers were improving the backend to get avails sooner with about 10-20% less wait time, but <strong>still too long for the users.</strong></li>
 			</ul>
 		</div>
 
@@ -399,12 +399,12 @@
 
 	<div class="row my-padding-tb">
 
-		<div class="col-lg-4 col-md-12 col-sm-12">
+		<div class="col-lg-6 col-md-12 col-sm-12">
 			<img src="img/geolink-async/interview-2.png" class="my-fullw" alt="user interview">
 		</div>
 
 
-		<div class="col-lg-8 col-md-12 col-sm-12 my-middle2">
+		<div class="col-lg-6 col-md-12 col-sm-12 my-middle2">
 			<h3>Key Findings</h3>
 			<ul class="text-secondary">
 				<li>The users were the GeoLink clients, mostly Ad Ops, they set up campaigns.</li>
@@ -664,25 +664,44 @@
 	</div>
 
 	<div class="my-margin-tb">
-		<h3>Flow Design v1</h3>
-		<p class="text-secondary">The flow design would allow the users to proceed with campaign setup with or without avails, and get avails later from the notification emails:</p>
-		<img src="img/geolink-async/flow-2.svg" class="my-margin-tb my-fullw intense" alt="flow design v1">
-	</div>
-
-	<div class="my-margin-tb">
-		<h3>Critic with Engineers</h3>
-		<p class="text-secondary">I walked through the flow design v1 with the engineers, and they gave me some awesome suggestions:</p>
-		<img src="img/geolink-async/flow-3-1.svg" class="my-margin-t my-fullw" alt="flow design v1 critic">
-		<img src="img/geolink-async/flow-3-2.svg" class="my-margin-b my-fullw intense" alt="flow design v1 critic">
-	</div>
-
-	<div class="my-margin-tb">
-		<h3>Flow Design v2 (Final)</h3>
+		<h3>New Flow (Final)</h3>
 		<p class="text-secondary">Per the engineer feedback, I cleaned up the flow design:</p>
 		<img src="img/geolink-async/flow-4.svg" class="my-margin-tb my-fullw intense" alt="flow design v2">
 	</div>
 
-	<hr>
+<!-- See more of spreadsheet download design iterations start-->
+	<p class="text-center">
+		<div class="form-check form-switch">
+		  <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" href="#collapseExample" role="switch" aria-expanded="false" aria-controls="collapseExample">
+		  <label class="form-check-label" for="flexSwitchCheckDefault">See Discussion with Engineers</label>
+		</div>
+	</p>
+	
+	<div class="collapse border my-rounded" id="collapseExample">
+		<div class="card card-body my-rounded">
+			<div class="my-margin-tb">
+				<h3>Flow Design v1</h3>
+				<p class="text-secondary">The flow design would allow the users to proceed with campaign setup with or without avails, and get avails later from the notification emails:</p>
+				<img src="img/geolink-async/flow-2.svg" class="my-margin-tb my-fullw intense" alt="flow design v1">
+			</div>
+
+			<div class="my-margin-tb">
+				<h3>Critic with Engineers</h3>
+				<p class="text-secondary">I walked through the flow design v1 with the engineers, and they gave me some awesome suggestions:</p>
+				<img src="img/geolink-async/flow-3-1.svg" class="my-margin-t my-fullw" alt="flow design v1 critic">
+				<img src="img/geolink-async/flow-3-2.svg" class="my-margin-b my-fullw intense" alt="flow design v1 critic">
+			</div>
+
+			<div class="my-margin-tb">
+				<h3>Flow Design v2 (Final)</h3>
+				<p class="text-secondary">Per the engineer feedback, I cleaned up the flow design:</p>
+				<img src="img/geolink-async/flow-4.svg" class="my-margin-tb my-fullw intense" alt="flow design v2">
+			</div>
+		</div>
+	</div>
+<!-- See more of spreadsheet download design iterations end-->
+
+<hr>
 </div>
 </section>
 
@@ -771,12 +790,77 @@
 	</div>
 
 	<div class="my-margin-tb">
+		<h3>Email Notification (Final)</h3>
+		<div class=" my-margin-tb row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h4 class="text-center">Avails - Okay</h4>
+				<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails okay">
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h4 class="text-center">Avails - Not Okay</h4>
+				<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails not okay">
+			</div>
+		</div>
+	</div>
+
+<!-- See more of spreadsheet download design iterations start-->
+	<p class="text-center">
+		<div class="form-check form-switch">
+		  <input class="form-check-input" type="checkbox" data-bs-toggle="collapse" href="#collapseEmail" role="switch" aria-expanded="false" aria-controls="collapseEmail">
+		  <label class="form-check-label" for="flexSwitchCheckDefault">See Design Iterations</label>
+		</div>
+	</p>
+	
+	<div class="collapse border my-rounded" id="collapseEmail">
+		<div class="card card-body my-rounded">
+			<div class="my-margin-tb">
+				<h3>Email Notification v1</h3>
+				<div class="my-margin-tb row">
+					<div class="col-lg-6 col-md-6 col-sm-12 my-margin-tb">
+						<h4 class="text-center">Avails - Okay</h4>
+						<img src="img/geolink-async/email-2-1.svg" class="my-fullw" alt="email notification v1 - avails okay">
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-12 my-margin-tb">
+						<h4 class="text-center">Avails - Not Okay</h4>
+						<img src="img/geolink-async/email-2-1.svg" class="my-fullw" alt="email notification v1 - avails not okay">
+					</div>
+				</div>
+			</div>
+
+			<div class="my-margin-tb">
+				<h3>Critic with Engineer</h3>
+				<p class="text-secondary">I checked in with the engineers and found out the technical limitation:</p>
+				<img src="img/geolink-async/email-3.svg" class="my-fullw intense" alt="engineer critic">
+			</div>
+
+			<div class="my-margin-tb">
+				<h3>Email Notification v2 (Final)</h3>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 my-margin-tb">
+						<h4 class="text-center">Avails - Okay</h4>
+						<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails okay">
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-12 my-margin-tb">
+						<h4 class="text-center">Avails - Not Okay</h4>
+						<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails not okay">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- See more of spreadsheet download design iterations end-->
+
+
+	<!-- <div class="my-margin-tb">
 		<h3>Why do we need email notification?</h3>
 		<p class="text-secondary">The users would get email notification if the avails are not ready when they submit the campaigns, so that the users can make adjustments to the campaigns as needed.</p>
 		<img src="img/geolink-async/email-1.svg" class="my-fullw intense" alt="prototype">
-	</div>
+	</div> -->
 
-	<div class="my-margin-tb"><h3>Email Notification v1</h3>
+	<!-- <div class="my-margin-tb"><h3>Email Notification v1</h3>
 	<div class=" my-margin-tb row">
 		<div class="col-lg-6 col-md-6 col-sm-12">
 			<h4 class="text-center">Avails - Okay</h4>
@@ -795,20 +879,20 @@
 		<img src="img/geolink-async/email-3.svg" class="my-fullw intense" alt="engineer critic">
 	</div>
 
-	<div class="my-margin-tb"><h3>Email Notification v2 (Final)</h3>
-	<div class=" my-margin-tb row">
-		<div class="col-lg-6 col-md-6 col-sm-12">
-			<h4 class="text-center">Avails - Okay</h4>
-			<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails okay">
-		</div>
+	<div class="my-margin-tb">
+		<h3>Email Notification v2 (Final)</h3>
+		<div class=" my-margin-tb row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h4 class="text-center">Avails - Okay</h4>
+				<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails okay">
+			</div>
 
-		<div class="col-lg-6 col-md-6 col-sm-12">
-			<h4 class="text-center">Avails - Not Okay</h4>
-			<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails not okay">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h4 class="text-center">Avails - Not Okay</h4>
+				<img src="img/geolink-async/email-4-1.svg" class="my-fullw" alt="email notification v2 - avails not okay">
+			</div>
 		</div>
-	</div>
-
-	</div>
+	</div> -->
 <hr>
 </div>
 </section>
@@ -861,18 +945,17 @@
 			<img src="img/geolink-async/working-2.png" class="my-fullw my-margin-b my-rounded my-shadow" alt="working solution demo">
 		</div>
 	</div>
-<hr>
+<!-- <hr> -->
 </div>
 </section>
 
 
 
 <!-- this is impact-->
-<section class="my-middle my-sec bg-white">
+<!-- <section class="my-middle my-sec bg-white">
 <div class="container">
 
 	<div class="my-margin-b my-color">
-		<!-- <h4>"How's the solution doing?"</h4> -->
 		<h2>Impact</h2>
 	</div>
 
@@ -904,7 +987,7 @@
 	</div>
 
 </div>
-</section>
+</section> -->
 
 
 
