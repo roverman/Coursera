@@ -234,6 +234,21 @@ $(function() {
 
 
 
+
+// display project TOC nav start
+var $tocItems = $(".toc-item");
+var $tocSections = $(".toc-section");
+
+$tocItems.addClass("d-inline-block d-md-none");
+$tocSections.addClass("d-none d-md-block");
+// display project TOC nav end
+
+
+
+
+
+
+
 // count number animation start
     // $('.count').each(function () {
     //     $(this).prop('Counter',0).animate({
@@ -247,6 +262,9 @@ $(function() {
     //     });
     // });
 // count number animation end
+
+
+
 
 
 
