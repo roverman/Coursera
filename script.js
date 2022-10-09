@@ -239,8 +239,8 @@ $(function() {
 var $tocItems = $(".toc-item");
 var $tocSections = $(".toc-section");
 
-$tocItems.addClass("d-inline-block d-md-none");
-$tocSections.addClass("d-none d-md-block");
+// $tocItems.addClass("d-inline-block d-md-none");
+// $tocSections.addClass("d-none d-md-block");
 // display project TOC nav end
 
 

@@ -80,7 +80,7 @@ top: 30px;
 width: 100%;
 z-index: 100;
 background-color: rgba(0, 0, 0, 0.5);
-backdrop-filter: blur(2px);
+backdrop-filter: blur(1px);
 }
 
 
@@ -168,12 +168,16 @@ border: none;
 	padding-top: 80px;
 }
 
-.my-margin-b {
-	margin-bottom: 32px;
+.my-margin {
+	margin: 32px;
 }
 
 .my-margin-tb {
 	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.my-margin-b {
 	margin-bottom: 32px;
 }
 
@@ -183,7 +187,11 @@ border: none;
 
 .my-sec {
 	padding-top: 2%;
-	padding-bottom: 2%;
+	padding-bottom: 1%;
+}
+
+.my-padding {
+	padding: 32px;
 }
 
 .my-padding-tb {
@@ -197,10 +205,6 @@ border: none;
 
 .my-padding-b {
 	padding-bottom: 32px;
-}
-
-.my-padding {
-	padding: 32px;
 }
 
 .logo-text {
@@ -587,15 +591,20 @@ position: relative;
 	width: 100%;
 }
 
+.my-fullh {
+	height: 100%;
+}
+
 .toc-item {
 	color: #616A72;
 	margin-right: 24px;
 	text-decoration: none;
+	display: none;
 }
 
-a.toc-item:hover {
+/*a.toc-item:hover {
 	color: black;
-}
+}*/
 
 .my-illus {
 	width: 80%;
@@ -844,6 +853,14 @@ a.card {
 .ratio-16x9 {
 	aspect-ratio: 16 / 9;
 }
+
+
+
+
+
+
+
+
 
 
 
