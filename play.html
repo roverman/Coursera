@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" Content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wei Tang - Resume</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- This is to normalize safari browser presets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<script src="https://kit.fontawesome.com/d16fe21231.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-light">
+
+<!-- loader -->
+	<div class="loader-wrapper" id="loader">
+	<img src="img/logo-white.svg" class="logo-rotate" alt="loading gif">
+	</div>
+<!-- loader -->
+
+	<header class="text-white">
+		<nav class="navbar smart bg-dark">
+  			<div class="container-fluid">
+    			<a class="navbar-brand" href="index.html">
+      				<img id="logo-img" src="https://uploads-ssl.webflow.com/5f8945fffdc8827612a1bc42/6251fd7e30baad05306b32a2_Logo-WT-White.svg" class="d-inline-block">
+      				<p class="d-none d-sm-inline text-white">WEI TANG</p>
+    			</a>
+  				<ul class="nav justify-content-end" id="nav-menu">
+  					<li class="nav-item">
+  						<a class="nav-link" href="index.html#projects">WORK</a>
+  					</li>
+  					<li class="nav-item">
+  						<a class="nav-link text-white" href="resume.html">RESUME</a>
+  					</li>
+  					<li class="nav-item">
+  						<a class="nav-link" href="about.html">ABOUT</a>
+  					</li>
+  				</ul>
+  			</div>
+		</nav>
+	</header>
+
+
+
+
+<section class="container d-flex justify-content-center top-padding">
+<form>
+  <fieldset>
+    <legend class="mb-3">Original Currency</legend>
+
+    <label for="disabledTextInput" class="form-label">🇺🇸 USD</label>
+
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text">$</span>
+		  </div>
+		  <input type="number" id="USD" class="form-control" value="1">
+		</div>
+
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text">%</span>
+		  </div>
+		  <input type="number" id="Perc" class="form-control" value="100">
+		</div>
+
+		<button type="button" class="btn btn-primary my-fullw" id="usd-button">Update</button>
+
+  </fieldset>
+
+  <fieldset disabled class="my-margin-tb">
+    <legend class="mb-3">Target Currency</legend>
+
+    <label for="disabledTextInput" class="form-label">🇺🇸 USD</label>
+    <div class="mb-3 input-group">
+      <div class="input-group-prepend">
+		    <span class="input-group-text">$</span>
+		  </div>
+      <input type="number" id="NewUSD" class="form-control" placeholder="1">
+    </div>
+
+    <label for="disabledTextInput" class="form-label">🇨🇳 RMB</label>
+    <div class="mb-3 input-group">
+      <div class="input-group-prepend">
+		    <span class="input-group-text">¥</span>
+		  </div>
+      <input type="number" id="RMB" class="form-control" placeholder="7.24">
+    </div>
+
+    <label for="disabledTextInput" class="form-label">🇯🇵 Yen</label>
+    <div class="mb-3 input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text">円</span>
+		  </div>
+      <input type="number" id="JPY" class="form-control" placeholder="147.695">
+    </div>
+
+    <label for="disabledTextInput" class="form-label">🇬🇧 Pound</label>
+    <div class="mb-3 input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text">£</span>
+		  </div>
+      <input type="number" id="POUND" class="form-control" placeholder="0.88">
+    </div>
+
+    <label for="disabledTextInput" class="form-label">🇪🇺 Euro</label>
+    <div class="mb-3 input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text">€</span>
+		  </div>
+      <input type="number" id="EURO" class="form-control" placeholder="1.01">
+    </div>
+
+  </fieldset>
+</form>
+</section>
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script-play.js"></script>
+</body>
+<footer class="text-center small text-white m-4">
+	<p>
+		<a class="footer-icon icon-m" href="mailto: weitang.wayne@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+		<a class="footer-icon icon-m" href="https://www.linkedin.com/in/wei-tang-400a2485/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a class="footer-icon icon-m" href="https://www.instagram.com/devilrover/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+	</p>
+	<p>&copy 2022 Wei Tang, All Rights Reserved. Designed and Coded with Love.</p>
+</footer>
+</html>
