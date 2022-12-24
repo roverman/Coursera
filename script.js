@@ -233,6 +233,18 @@ $(function() {
 
 
 
+// inject footer message start
+$(document).ready(function(){
+    $('footer').append("<p>" + "&copy 2022 Wei Tang, All Rights Reserved. Designed and Coded with Love." + "</p>");
+});
+// inject footer message end
+
+
+
+
+
+
+
 
 
 // display project TOC nav start
@@ -242,6 +254,7 @@ var $tocSections = $(".toc-section");
 // $tocItems.addClass("d-inline-block d-md-none");
 // $tocSections.addClass("d-none d-md-block");
 // display project TOC nav end
+
 
 
 
