@@ -235,7 +235,7 @@ $(function() {
 
 // inject footer message start
 $(document).ready(function(){
-    $('footer').append("<p>" + "&copy 2022 Wei Tang, All Rights Reserved. Designed and Coded with Love." + "</p>");
+    $('footer').append("<p>" + "&copy 2023 Wei Tang, All Rights Reserved. Designed and Coded with Love." + "</p>");
 });
 // inject footer message end
 
