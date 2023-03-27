@@ -1525,3 +1525,43 @@ a.card {
 }
 
 /* Tooltip Styles end------------------------------------------------- */
+
+
+/* AI style starts */
+.card {
+/*	box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.20);*/
+	border: 1px solid lightgray;
+}
+
+.card:hover {
+	box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.20);
+	border: 1px solid lightgray;
+}
+
+.card-body {
+	padding: 12px;
+}
+
+.card-text {
+	margin:0;
+}
+
+
+.card-title {
+	margin:0;
+}
+
+
+.ai-logo {
+	aspect-ratio: 1 /1;
+	overflow: hidden;
+}
+
+.checked {
+	color: orange;
+}
+
+h6 {
+	font-weight: 700;
+	font-size: 16px;
+}

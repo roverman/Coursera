@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" Content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wei Tang - AI</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- This is to normalize safari browser presets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<script src="https://kit.fontawesome.com/d16fe21231.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-light">
+
+<!-- loader -->
+	<div class="loader-wrapper" id="loader">
+	<img src="img/logo-white.svg" class="logo-rotate" alt="loading gif">
+	</div>
+<!-- loader -->
+
+	<header class="text-white">
+		<nav class="navbar smart bg-dark">
+  			<div class="container-fluid">
+    			<a class="navbar-brand" href="index.html">
+      				<img id="logo-img" src="https://uploads-ssl.webflow.com/5f8945fffdc8827612a1bc42/6251fd7e30baad05306b32a2_Logo-WT-White.svg" class="d-inline-block">
+      				<p class="d-none d-sm-inline text-white">Wei Tang - AI</p>
+    			</a>
+  			</div>
+		</nav>
+	</header>
+
+
+<nav class="nav">
+  <a class="nav-link active" aria-current="page" href="ai.html">Home</a>
+  <a class="nav-link" href="ai-chat.html">Chat</a>
+  <a class="nav-link" href="ai-write.html">Write</a>
+  <a class="nav-link" href="ai-image.html">Image</a>
+</nav>
+
+
+<section class="container d-flex justify-content-center top-padding">
+<div class="container">
+  <div class="row">
+
+  	<div class="col-lg-4">
+
+  		<h4 class="text-center">Chat</h4>
+
+			<a class="card mb-3 text-dark" href="https://chat.openai.com/chat" target="_blank">
+			  <div class="row g-0">
+			    <div class="col-4 my-middle rounded-start">
+			      <img src="https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg" class="img-fluid my-fullw bg-primary rounded-start ai-logo" alt="...">
+			    </div>
+			    <div class="col-8">
+			      <div class="card-body">
+			        <h6 class="card-title d-inline">ChatGPT</h6>
+			        <span class="badge bg-success d-inline float-end">Free Trial</span>
+			        <p class="card-text"><small class="text-muted">by OpenAI</small></p>
+			        <div>
+			        	<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star-half-stroke checked"></span>
+			        </div>
+			        <p class="card-text">Text-based AI chatbot</p>
+			      </div>
+			    </div>
+			  </div>
+			</a>
+
+			<a class="card mb-3 text-dark" href="https://openai.com/product/gpt-4" target="_blank">
+			  <div class="row g-0">
+			    <div class="col-4 my-middle rounded-start ai-logo">
+			      <img src="https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg" class="img-fluid my-fullw bg-primary rounded-start" alt="...">
+			    </div>
+			    <div class="col-8">
+			      <div class="card-body">
+			        <h6 class="card-title d-inline">GPT-4</h6>
+			        <span class="badge bg-primary d-inline float-end">$20 /Month</span>
+			        <p class="card-text"><small class="text-muted">by OpenAI</small></p>
+			        <div>
+			        	<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+			        </div>
+			        <p class="card-text">Advanced version of ChatGPT</p>
+			      </div>
+			    </div>
+			  </div>
+			</a>
+
+			<a class="card mb-3 text-dark" href="https://bard.google.com/" target="_blank">
+			  <div class="row g-0">
+			    <div class="col-4 my-middle rounded-start bg-black ai-logo">
+			      <img src="https://www.ceotech.it/wp-content/uploads/2023/03/Bard-Google-inizia-i-test-pubblici-in-USA-e-Regno-Unito.jpg" class="img-fluid my-fullw bg-primary" alt="...">
+			    </div>
+			    <div class="col-8">
+			      <div class="card-body">
+			        <h6 class="card-title d-inline">Bard</h6>
+			        <span class="badge bg-secondary d-inline float-end">Waitlist</span>
+			        <p class="card-text"><small class="text-muted">by Google</small></p>
+			        <div>
+			        	<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+			        </div>
+			        <p class="card-text">Google version of AI chatbot</p>
+			      </div>
+			    </div>
+			  </div>
+			</a>
+
+  	</div>
+
+
+
+
+  	<div class="col-lg-4">
+
+  		<h4 class="text-center">Image</h4>
+
+			<a class="card mb-3 text-dark" href="https://discord.com/invite/midjourney" target="_blank">
+			  <div class="row g-0">
+			    <div class="col-4 my-middle rounded-start ai-logo">
+			      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Midjourney_Emblem.png/480px-Midjourney_Emblem.png" class="img-fluid my-fullw bg-primary rounded-start" alt="Midjounrey Logo">
+			    </div>
+			    <div class="col-8">
+			      <div class="card-body">
+			        <h6 class="card-title d-inline">Midjourney</h6>
+			        <span class="badge bg-success d-inline float-end">Free Trial</span>
+			        <p class="card-text"><small class="text-muted">by Midjourney Inc.</small></p>
+			        <div>
+			        	<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+			        </div>
+			        <p class="card-text">AI engine to generate images</p>
+			      </div>
+			    </div>
+			  </div>
+			</a>
+
+			<a class="card mb-3 text-dark" href="https://www.bing.com/create" target="_blank">
+			  <div class="row g-0">
+			    <div class="col-4 my-middle rounded-start ai-logo">
+			      <img src="https://cdn.vox-cdn.com/thumbor/lw7eaG_tnqPDo-Jy5CVzQ22WyCY=/0x0:660x440/1400x1050/filters:focal(330x220:331x221)/cdn.vox-cdn.com/uploads/chorus_asset/file/21937385/binglogo.jpg" class="img-fluid my-fullw bg-primary rounded-start" alt="...">
+			    </div>
+			    <div class="col-8">
+			      <div class="card-body">
+			        <h6 class="card-title d-inline">Bing Image Creator</h6>
+			        <span class="badge bg-success d-inline float-end">Free Trial</span>
+			        <p class="card-text"><small class="text-muted">by Microsoft</small></p>
+			        <div>
+			        	<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+			        </div>
+			        <p class="card-text">Powerful AI image generator</p>
+			      </div>
+			    </div>
+			  </div>
+			</a>
+
+  	</div>
+
+
+  	<div class="col-lg-4">
+
+  		<h4 class="text-center">Write</h4>
+
+			<a class="card mb-3 text-dark" href="https://www.notion.so/" target="_blank">
+			  <div class="row g-0">
+			    <div class="col-4 my-middle rounded-start ai-logo">
+			      <img src="https://img.icons8.com/ios/512/notion.png" class="img-fluid my-fullw rounded-start" alt="Notion AI Logo">
+			    </div>
+			    <div class="col-8">
+			      <div class="card-body">
+			        <h6 class="card-title d-inline">Notion AI</h6>
+			        <span class="badge bg-success d-inline float-end">Free</span>
+			        <p class="card-text"><small class="text-muted">by Midjourney Inc.</small></p>
+			        <div>
+			        	<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star-half-stroke checked"></span>
+			        </div>
+			        <p class="card-text">AI engine to write text content</p>
+			      </div>
+			    </div>
+			  </div>
+			</a>
+
+  	</div>
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script-play.js"></script>
+</body>
+<footer class="text-center small m-4">
+	<p>
+		<a class="footer-icon icon-m" href="mailto: weitang.wayne@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+		<a class="footer-icon icon-m" href="https://www.linkedin.com/in/wei-tang-400a2485/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a class="footer-icon icon-m" href="https://www.instagram.com/devilrover/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+	</p>
+	<p>&copy 2023 Wei Tang, All Rights Reserved. Designed and Coded with Love.</p>
+</footer>
+</html>
