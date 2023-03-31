@@ -1530,38 +1530,55 @@ a.card {
 /* AI style starts */
 .card {
 /*	box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.20);*/
-	border: 1px solid lightgray;
+/*	border: 1px solid lightgray;*/
+background-color: black;
 }
 
 .card:hover {
-	box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.20);
-	border: 1px solid lightgray;
+/*	box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,.20);
+	border: 1px solid lightgray;*/
+	background-color: #282828;
 }
 
 .card-body {
 	padding: 12px;
+/*	font-size: 14px;*/
 }
 
 .card-text {
 	margin:0;
+	color: white;
 }
 
 
 .card-title {
 	margin:0;
+	color: white;
 }
 
 
 .ai-logo {
 	aspect-ratio: 1 /1;
+	border-radius: 50%;
 	overflow: hidden;
+	padding: 16px;
 }
 
 .checked {
 	color: orange;
 }
 
+.unchecked {
+	color: gray;
+}
+
+@media (min-width: 992px) {
+	.border-r {
+		border-right: 1px solid dimgray;;
+	}
+}
+
+
 h6 {
-	font-weight: 700;
 	font-size: 16px;
 }
