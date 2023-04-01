@@ -153,3 +153,53 @@ $("#usd-button").on("click", function transCurrency() {
 
 
 
+//js for ai.html!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+var chatArr = [
+    {
+    "Link":"https://chat.openai.com/chat",
+    "Logo":"https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg",
+    "Name":"牛逼ai",
+    "Owner":"by ChatAI",
+    "Description":"Smart AI chatbot",
+    "Rating":"5",
+    "Status": "Free Trial"
+    },
+    {
+    "Link":"https://chat.openai.com/chat",
+    "Logo":"https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg",
+    "Name":"CHATgpppt",
+    "Owner":"by ChatAI",
+    "Description":"Smart AI chatbot",
+    "Rating":"3",
+    "Status": "20/Month"
+    }
+]
+
+
+
+
+
+$.each(chatArr, function(i){
+    var aiCardString = '<a class="card mb-3" href="'+ chatArr[i].Link +'" target="_blank"> <div class="row g-0"> <div class="col-4 my-middle rounded-start"> <img src="'+ chatArr[i].Logo + '" class="img-fluid my-fullw ai-logo" alt="Logo"> </div> <div class="col-8"> <div class="card-body"> <h6 class="card-title d-inline">' + chatArr[i].Name + '</h6> <span class="badge bg-success d-inline float-end">' + chatArr[i].Status + '</span> <p class="card-text"><small class="text-muted">' + chatArr[i].Owner + '</small></p> <div id="' + "starNumber" + i + '"></div> <p class="card-text">' + chatArr[i].Description + '</p> </div> </div> </div> </a>'
+    $('#ai-chat').append(aiCardString);
+
+    var starString = "";
+    var starCount = chatArr[i].Rating;
+    console.log(starCount)
+
+    for (let i = starCount; i > 0; i--) {
+        var checkedStar = '<span class="fa fa-star checked"></span>';
+        starString = starString + checkedStar;
+    }
+
+    for (let i = 5-starCount; i > 0; i--) {
+        var uncheckedStar = '<span class="fa fa-star unchecked"></span>';
+        starString = starString + uncheckedStar;
+    }
+
+    var starId = "#"+"starNumber"+i;
+    console.log(starId);
+    $(starId).append(starString);
+})
+
+

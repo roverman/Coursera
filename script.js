@@ -58,37 +58,38 @@ $(window).scroll(function() {
 
 
 
-//password verification
-console.log("Welcome my friend!");
 
-$("#submitPassword").on("click", function validatePassword() {
-    var getPassword = document.querySelector("#inputPassword").value;
-    console.log(getPassword);
-    var A = "w";
-    var B = "t";
-    var C = ["5","1","2"];
-    if (getPassword == A+B+(C[1]+11)*6) {
-        console.log("Password correct!");
-        // window.location.href = "index.html";
-        console.log("hahha");
-        // document.querySelector("#loader").classList.remove("invisible");
-        // window.location.href = "index.html";
-        setTimeout(function() {
-            window.location.href = "myhousing.html";
-        }, 0);
-    }
-    else {
-        console.log("Password Wrong!");
-        document.querySelector("#inputPassword").classList.add("border-danger");
-        document.querySelector("#passwordAlert").classList.remove("invisible");
-        setTimeout(function() {
-            document.querySelector("#inputPassword").classList.remove("border-danger");
-        }, 1000);
-        setTimeout(function() {
-            document.querySelector("#passwordAlert").classList.add("invisible");
-        }, 1000);
-    };
-});
+//password verification
+// console.log("Welcome my friend!");
+
+// $("#submitPassword").on("click", function validatePassword() {
+//     var getPassword = document.querySelector("#inputPassword").value;
+//     console.log(getPassword);
+//     var A = "w";
+//     var B = "t";
+//     var C = ["5","1","2"];
+//     if (getPassword == A+B+(C[1]+11)*6) {
+//         console.log("Password correct!");
+//         // window.location.href = "index.html";
+//         console.log("hahha");
+//         // document.querySelector("#loader").classList.remove("invisible");
+//         // window.location.href = "index.html";
+//         setTimeout(function() {
+//             window.location.href = "myhousing.html";
+//         }, 0);
+//     }
+//     else {
+//         console.log("Password Wrong!");
+//         document.querySelector("#inputPassword").classList.add("border-danger");
+//         document.querySelector("#passwordAlert").classList.remove("invisible");
+//         setTimeout(function() {
+//             document.querySelector("#inputPassword").classList.remove("border-danger");
+//         }, 1000);
+//         setTimeout(function() {
+//             document.querySelector("#passwordAlert").classList.add("invisible");
+//         }, 1000);
+//     };
+// });
 
 
 
@@ -275,6 +276,17 @@ var $tocSections = $(".toc-section");
     //     });
     // });
 // count number animation end
+
+
+
+
+
+
+
+
+
+
+
 
 
 
