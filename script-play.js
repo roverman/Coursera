@@ -158,29 +158,37 @@ var chatArr = [
     {
     "Link":"https://chat.openai.com/chat",
     "Logo":"https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg",
-    "Name":"牛逼ai",
-    "Owner":"by ChatAI",
-    "Description":"Smart AI chatbot",
-    "Rating":"5",
-    "Status": "Free Trial"
+    "Name":"ChatGPT",
+    "Owner":"by OpenAI",
+    "Description":"Most popular AI chatbot",
+    "Rating":"4",
+    "Status": "Free Trial",
+    "BadgeColor": "bg-success"
     },
     {
     "Link":"https://chat.openai.com/chat",
     "Logo":"https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg",
-    "Name":"CHATgpppt",
-    "Owner":"by ChatAI",
-    "Description":"Smart AI chatbot",
+    "Name":"GPT-4",
+    "Owner":"by OpenAI",
+    "Description":"Advanced version of ChatGPT",
+    "Rating":"5",
+    "Status": "20/Month",
+    "BadgeColor": "bg-primary"
+    },
+    {
+    "Link":"https://bard.google.com/",
+    "Logo":"https://www.ceotech.it/wp-content/uploads/2023/03/Bard-Google-inizia-i-test-pubblici-in-USA-e-Regno-Unito.jpg",
+    "Name":"Bard",
+    "Owner":"by Google",
+    "Description":"Google version of AI chatbot",
     "Rating":"3",
-    "Status": "20/Month"
-    }
-]
-
-
-
-
+    "Status": "Waitlist",
+    "BadgeColor": "bg-secondary"
+    },
+];
 
 $.each(chatArr, function(i){
-    var aiCardString = '<a class="card mb-3" href="'+ chatArr[i].Link +'" target="_blank"> <div class="row g-0"> <div class="col-4 my-middle rounded-start"> <img src="'+ chatArr[i].Logo + '" class="img-fluid my-fullw ai-logo" alt="Logo"> </div> <div class="col-8"> <div class="card-body"> <h6 class="card-title d-inline">' + chatArr[i].Name + '</h6> <span class="badge bg-success d-inline float-end">' + chatArr[i].Status + '</span> <p class="card-text"><small class="text-muted">' + chatArr[i].Owner + '</small></p> <div id="' + "starNumber" + i + '"></div> <p class="card-text">' + chatArr[i].Description + '</p> </div> </div> </div> </a>'
+    var aiCardString = '<a class="card mb-3" href="'+ chatArr[i].Link +'" target="_blank"> <div class="row g-0"> <div class="col-4 my-middle rounded-start"> <img src="'+ chatArr[i].Logo + '" class="img-fluid my-fullw ai-logo" alt="Logo"> </div> <div class="col-8"> <div class="card-body"> <h6 class="card-title d-inline">' + chatArr[i].Name + '</h6> <span class="badge ' + chatArr[i].BadgeColor + ' d-inline float-end">' + chatArr[i].Status + '</span> <p class="card-text"><small class="text-muted">' + chatArr[i].Owner + '</small></p> <div id="' + chatArr[i].Name.replaceAll(" ","-") + "starNumber" + i + '"></div> <p class="card-text">' + chatArr[i].Description + '</p> </div> </div> </div> </a>'
     $('#ai-chat').append(aiCardString);
 
     var starString = "";
@@ -197,9 +205,111 @@ $.each(chatArr, function(i){
         starString = starString + uncheckedStar;
     }
 
-    var starId = "#"+"starNumber"+i;
+    var starId = "#"+ chatArr[i].Name.replaceAll(" ","-") + "starNumber"+i;
     console.log(starId);
     $(starId).append(starString);
-})
+});
+
+
+
+
+
+
+var imageArr = [
+    {
+    "Link":"https://discord.com/invite/midjourney",
+    "Logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Midjourney_Emblem.png/480px-Midjourney_Emblem.png",
+    "Name":"Midjourney",
+    "Owner":"by Midjourney Inc.",
+    "Description":"AI engine to generate images",
+    "Rating":"5",
+    "Status": "Free Trial",
+    "BadgeColor": "bg-success"
+    },
+    {
+    "Link":"https://stablediffusionweb.com/",
+    "Logo":"https://stablediffusionweb.com/logo.png",
+    "Name":"Stable Diffusion",
+    "Owner":"by ??????",
+    "Description":"Popular and fast AI Engine",
+    "Rating":"4",
+    "Status": "Free Trial",
+    "BadgeColor": "bg-success"
+    },
+    {
+    "Link":"https://www.bing.com/create",
+    "Logo":"https://cdn.vox-cdn.com/thumbor/lw7eaG_tnqPDo-Jy5CVzQ22WyCY=/0x0:660x440/1400x1050/filters:focal(330x220:331x221)/cdn.vox-cdn.com/uploads/chorus_asset/file/21937385/binglogo.jpg",
+    "Name":"Bing Image Creator",
+    "Owner":"by Microsoft",
+    "Description":"Soso image creator",
+    "Rating":"3",
+    "Status": "Free Trial",
+    "BadgeColor": "bg-success"
+    },
+];
+
+$.each(imageArr, function(i){
+    var aiCardString = '<a class="card mb-3" href="'+ imageArr[i].Link +'" target="_blank"> <div class="row g-0"> <div class="col-4 my-middle rounded-start"> <img src="'+ imageArr[i].Logo + '" class="img-fluid my-fullw ai-logo" alt="Logo"> </div> <div class="col-8"> <div class="card-body"> <h6 class="card-title d-inline">' + imageArr[i].Name + '</h6> <span class="badge ' + imageArr[i].BadgeColor + ' d-inline float-end">' + imageArr[i].Status + '</span> <p class="card-text"><small class="text-muted">' + imageArr[i].Owner + '</small></p> <div id="' + imageArr[i].Name.replaceAll(" ","-") + "starNumber" + i + '"></div> <p class="card-text">' + imageArr[i].Description + '</p> </div> </div> </div> </a>'
+    $('#ai-image').append(aiCardString);
+
+    var starString = "";
+    var starCount = imageArr[i].Rating;
+    console.log(starCount)
+
+    for (let i = starCount; i > 0; i--) {
+        var checkedStar = '<span class="fa fa-star checked"></span>';
+        starString = starString + checkedStar;
+    }
+
+    for (let i = 5-starCount; i > 0; i--) {
+        var uncheckedStar = '<span class="fa fa-star unchecked"></span>';
+        starString = starString + uncheckedStar;
+    }
+
+    var starId = "#"+ imageArr[i].Name.replaceAll(" ","-") + "starNumber"+i;
+    console.log(starId);
+    $(starId).append(starString);
+});
+
+
+
+
+
+
+var writeArr = [
+    {
+    "Link":"https://www.notion.so/",
+    "Logo":"https://res.cloudinary.com/apideck/image/upload/v1557444810/catalog/notion/icon128x128.jpg",
+    "Name":"Notion AI",
+    "Owner":"by Notion",
+    "Description":"AI engine for written content",
+    "Rating":"5",
+    "Status": "Free",
+    "BadgeColor": "bg-success"
+    },
+];
+
+$.each(writeArr, function(i){
+    var aiCardString = '<a class="card mb-3" href="'+ writeArr[i].Link +'" target="_blank"> <div class="row g-0"> <div class="col-4 my-middle rounded-start"> <img src="'+ writeArr[i].Logo + '" class="img-fluid my-fullw ai-logo" alt="Logo"> </div> <div class="col-8"> <div class="card-body"> <h6 class="card-title d-inline">' + writeArr[i].Name + '</h6> <span class="badge ' + writeArr[i].BadgeColor + ' d-inline float-end">' + writeArr[i].Status + '</span> <p class="card-text"><small class="text-muted">' + writeArr[i].Owner + '</small></p> <div id="' + writeArr[i].Name.replaceAll(" ","-") + "starNumber" + i + '"></div> <p class="card-text">' + writeArr[i].Description + '</p> </div> </div> </div> </a>'
+    $('#ai-write').append(aiCardString);
+
+    var starString = "";
+    var starCount = writeArr[i].Rating;
+    console.log(starCount)
+
+    for (let i = starCount; i > 0; i--) {
+        var checkedStar = '<span class="fa fa-star checked"></span>';
+        starString = starString + checkedStar;
+    }
+
+    for (let i = 5-starCount; i > 0; i--) {
+        var uncheckedStar = '<span class="fa fa-star unchecked"></span>';
+        starString = starString + uncheckedStar;
+    }
+
+    var starId = "#"+ writeArr[i].Name.replaceAll(" ","-") + "starNumber"+i;
+    console.log(starId);
+    $(starId).append(starString);
+});
 
 
