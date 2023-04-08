@@ -172,7 +172,7 @@ var chatArr = [
     "Owner":"by OpenAI",
     "Description":"Advanced version of ChatGPT",
     "Rating":"5",
-    "Status": "20/Month",
+    "Status": "$20/Month",
     "BadgeColor": "bg-primary"
     },
     {
@@ -230,7 +230,7 @@ var imageArr = [
     "Link":"https://stablediffusionweb.com/",
     "Logo":"https://stablediffusionweb.com/logo.png",
     "Name":"Stable Diffusion",
-    "Owner":"by ??????",
+    "Owner":"by Stability AI",
     "Description":"Popular and fast AI Engine",
     "Rating":"4",
     "Status": "Free Trial",
@@ -243,6 +243,26 @@ var imageArr = [
     "Owner":"by Microsoft",
     "Description":"Soso image creator",
     "Rating":"3",
+    "Status": "Free Trial",
+    "BadgeColor": "bg-success"
+    },
+    {
+    "Link":"https://app.photoroom.com/create",
+    "Logo":"https://play-lh.googleusercontent.com/oWttohYyh3AtI6jYeQNQReUzhz-babbXTHf9DDosjH-BnUC1eGgh16yxJoDrJm9xxr49=w240-h480-rw",
+    "Name":"PhotoRoom",
+    "Owner":"by PhotoRoom",
+    "Description":"AI photo background editting",
+    "Rating":"5",
+    "Status": "Free Trial",
+    "BadgeColor": "bg-success"
+    },
+    {
+    "Link":"https://imglarger.com/",
+    "Logo":"img/ai/imglarger.svg",
+    "Name":"AI Image Enlarger",
+    "Owner":"by AI.Image.Enlarger",
+    "Description":"AI enlarge/enhance photos",
+    "Rating":"4",
     "Status": "Free Trial",
     "BadgeColor": "bg-success"
     },
@@ -282,10 +302,20 @@ var writeArr = [
     "Logo":"https://res.cloudinary.com/apideck/image/upload/v1557444810/catalog/notion/icon128x128.jpg",
     "Name":"Notion AI",
     "Owner":"by Notion",
-    "Description":"AI engine for written content",
+    "Description":"AI engine for ntoes and docs",
     "Rating":"5",
     "Status": "Free",
     "BadgeColor": "bg-success"
+    },
+    {
+    "Link":"https://www.jasper.ai/",
+    "Logo":"https://cdn.chimpify.net/5e77368fa85872a2518b457a/2022/04/Jasper-AI.png",
+    "Name":"Jasper",
+    "Owner":"by Jasper",
+    "Description":"AI for marketing content",
+    "Rating":"2",
+    "Status": "$299/Year",
+    "BadgeColor": "bg-primary"
     },
 ];
 
