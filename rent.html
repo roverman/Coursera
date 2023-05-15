@@ -7,47 +7,50 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- jsFiddle will insert css and js -->
     <style type="text/css">
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
     	#map {
 			  height: 80vh;
-        width:100%;
 			}
-			html,
-			body {
+			html,body {
 			  height: 100%;
-			  margin: 0;
-			  padding: 0;
 			}
       .gm-style-mtc {
         display: none;
       }
-      .rent-card {
-        width: 33%;
-        height:20rem;
-        display: inline-block;
-        margin-bottom: 4px;
-        margin-right: 3px;
+      .card-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
       }
+
     </style>
 
   </head>
   <body>
-    <section id="Title">
+    <section id="Title" class="fixed-top bg-white">
       <img src="rent/logo.svg" style="width: 20px">
       <h3 class="d-inline">短租么</h3>
-    <section>
+      <hr>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Filters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Search</a>
+        </li>
+      </ul>
+    </section>
 
-    <hr>
-
-    <section id="Filters">Search Date, Location, and People</section>
 
     <hr>
 
     <!-- <div id="map"></div> -->
-
-    <div class="row">
-
-      <div id="map" class="col bg-primary"></div>
-      <div class="col" id="listings"></div>
+      <div id="map" class=""></div>
+      <div id="listings" class="row"></div>
 
     </div>
 

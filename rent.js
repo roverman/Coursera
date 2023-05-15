@@ -1,15 +1,54 @@
 var listings = [
     {
-    "Link":"https://chat.openai.com/chat",
+    "title":"Newport绝佳河景1B1B",
+    "rate":"50",
+    "neogitable":"Yes",
+    "location":"Queens",
+    "address":"310 Livington St, Newport, NJ",
+    "lat":"40.7271548",
+    "lng":"-74.0325778",
+    "startDate":"08/12/2023",
+    "endDate":"08/19/2023",
+    "minStay":"5",
+    "description":"【户型】2b1b 厕所是公共的(在房间外面) 有客厅和厨房【家具】基本家具都有(床 书桌 椅子 储物柜 衣柜 灯etc) 有室内洗衣机和烘干机 厨房设施齐全 拿上必用品➕私人用品直接拎包入住😝【价格】(包水电费及wifi费用)(可商量)【交通】下楼步行4-5min到N/W/E/M/R/7号线 一站上岛 去NYU Parsons Ktown FIT Pratt Flushing都很方便【楼内设施】👨‍✈️24小时doorman  💪健身房  🏊‍♂️rooftop pool  🧘‍♀️yoga room  📖study room  🎲game room",
+    "wechat":"L1lilxx1_s1ql",
+    "cell":"284-342-5346",
     },
     {
-    "Link":"https://chat.openai.com/chat",
+    "title":"Grove超大卧室",
+    "rate":"50",
+    "neogitable":"True",
+    "location":"Queens",
+    "startDate":"08/12/2023",
+    "endDate":"08/19/2023",
+    "minStay":"5",
+    "description":"",
+    "wechat":"cocolemon",
+    "cell":"284-342-5346",
     },
     {
-    "Link":"https://chat.openai.com/chat",
+    "title":"LIC绝佳河景房",
+    "rate":"50",
+    "neogitable":"True",
+    "location":"Queens",
+    "startDate":"08/12/2023",
+    "endDate":"08/19/2023",
+    "minStay":"5",
+    "description":"",
+    "wechat":"cocolemon",
+    "cell":"284-342-5346",
     },
     {
-    "Link":"https://chat.openai.com/chat",
+    "title":"Manhattan绝佳河景房",
+    "rate":"50",
+    "neogitable":"True",
+    "location":"Queens",
+    "startDate":"08/12/2023",
+    "endDate":"08/19/2023",
+    "minStay":"5",
+    "description":"",
+    "wechat":"cocolemon",
+    "cell":"284-342-5346",
     },
     {
     "Link":"https://chat.openai.com/chat",
@@ -20,8 +59,8 @@ var listings = [
 ];
 
 
-$.each(listings, function(){
-    var listingCardString = '<div class="card rent-card"><img class="card-img-top" src="https://media.architecturaldigest.com/photos/62bdb5fda47d113b36863416/16:9/w_1738,h_977,c_limit/Mod%20Tree%202.jpeg" alt="Card image cap"><div class="card-body"><h5>次卧</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p></div></div>'
+$.each(listings, function(i){
+    var listingCardString = '<div class="card-wrap col-lg-4 col-md-12"><div class="card"><img class="card-img-top" src="https://media.architecturaldigest.com/photos/62bdb5fda47d113b36863416/16:9/w_1738,h_977,c_limit/Mod%20Tree%202.jpeg" alt="Card image cap"><div class="card-body"><h5>'+ listings[i].title +'</h5><h5 class="text-primary">$'+ listings[i].rate +' /night</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p></div></div></div>'
     $('#listings').append(listingCardString);
 });
 
@@ -46,7 +85,7 @@ $.each(listings, function(){
 function initMap() {
   const uluru = { lat: 40.7271548, lng: -74.0325778 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 13,
     center: uluru,
   });
   const contentString =
@@ -54,18 +93,12 @@ function initMap() {
     '<div id="siteNotice">' +
     "</div>" +
     '<img class="card-img-top" src="https://media.architecturaldigest.com/photos/62bdb5fda47d113b36863416/16:9/w_1738,h_977,c_limit/Mod%20Tree%202.jpeg" alt="Card image cap">' +
-    '<h1 id="firstHeading" class="firstHeading">次卧</h1>' +
+    '<h1 id="firstHeading" class="firstHeading">' + 
+    listings[0].title +
+    '</h1>' +
     '<div id="bodyContent">' +
-    "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-    "sandstone rock formation in the southern part of the " +
-    "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-    "south west of the nearest large town, Alice Springs; 450&#160;km " +
-    "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-    "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-    "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-    "Aboriginal people of the area. It has many springs, waterholes, " +
-    "rock caves and ancient paintings. Uluru is listed as a World " +
-    "Heritage Site.</p>" +
+    "<p>"+ listings[0].description
+    "</p>" +
     '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
     "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
     "(last visited June 22, 2009).</p>" +
