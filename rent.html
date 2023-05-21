@@ -14,6 +14,7 @@
       }
     	#map {
 			  height: 80vh;
+        margin-top:25%;
 			}
 			html,body {
 			  height: 100%;
@@ -26,33 +27,77 @@
         padding-right: 20px;
         padding-top: 20px;
       }
-
+      h5 {
+        font-size: 2em;
+      }
+      h3 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+      li {
+        font-size: 1.5em;
+      }
+      .modal-xl {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .modal-dialog, .modal-content {
+        width:100vw;
+        margin:0;
+        padding: 0;
+      }
     </style>
 
   </head>
   <body>
+
     <section id="Title" class="fixed-top bg-white">
-      <img src="rent/logo.svg" style="width: 20px">
+      <img src="rent/logo.svg" style="width: 40px">
       <h3 class="d-inline">短租么</h3>
+      <hr>
+      <p>Search and Filters</p>
       <hr>
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Filters</a>
+          <a class="nav-link active" aria-current="page" href="#">Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Search</a>
+          <a class="nav-link" href="#">List</a>
         </li>
       </ul>
+      <hr>
     </section>
 
 
-    <hr>
-
     <!-- <div id="map"></div> -->
-      <div id="map" class=""></div>
-      <div id="listings" class="row"></div>
+    <div id="map" class=""></div>
+    <div id="listings" class="row"></div>
 
-    </div>
+
+    <!-- modal content here -->
+    <div id="fullscreenModal" class="modal modal-xl" tabindex="-1">
+      <div class="modal-dialog bg-primary">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> 
 
 
     <script
