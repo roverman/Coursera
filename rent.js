@@ -3,7 +3,7 @@
 var listings = [
     {
     "title":"Newport绝佳河景1B1B",
-    "rate":"50",
+    "rate":60,
     "neogitable":"Yes",
     "location":"Queens",
     "address":"310 Livington St, Newport, NJ",
@@ -18,7 +18,7 @@ var listings = [
     },
     {
     "title":"Grove超大卧室",
-    "rate":"50",
+    "rate":50,
     "neogitable":"True",
     "location":"Queens",
     "address":"310 Livington St, Newport, NJ",
@@ -27,13 +27,13 @@ var listings = [
     "startDate":"08/12/2023",
     "endDate":"08/19/2023",
     "minStay":"5",
-    "description":"2b1b 厕所是公共的(在房间外面) 有客厅和厨房",
+    "description":"2b1b 厕所是公共的(在房间外面) 有客厅和厨房 厨房设施齐全 拿上必用品➕私人用品直接拎包入住😝【价格】(包水电费及wifi费用)(可商量)【交通】下楼步行4-5min到N/W/E/M/R/7号线 一站上岛 去NYU Parsons Ktown FIT Pratt Flushing都很方便【楼内设施】",
     "wechat":"cocolemon",
     "cell":"284-342-5346",
     },
     {
     "title":"LIC绝佳交通房",
-    "rate":"50",
+    "rate":50,
     "neogitable":"True",
     "location":"Queens",
     "address":"310 Livington St, Newport, NJ",
@@ -48,7 +48,7 @@ var listings = [
     },
     {
     "title":"Manhattan绝佳河景房",
-    "rate":"50",
+    "rate":50,
     "neogitable":"True",
     "location":"Queens",
     "address":"310 Livington St, Newport, NJ",
@@ -63,7 +63,7 @@ var listings = [
     },
     {
     "title":"Manhattan绝佳河景房222",
-    "rate":"50",
+    "rate":20,
     "neogitable":"True",
     "location":"Queens",
     "address":"310 Livington St, Newport, NJ",
@@ -78,7 +78,7 @@ var listings = [
     },
     {
     "title":"Manhattan绝佳河景房3333",
-    "rate":"50",
+    "rate":80,
     "neogitable":"True",
     "location":"Queens",
     "address":"310 Livington St, Newport, NJ",
@@ -100,7 +100,9 @@ $.each(listings, function(i){
     listings[i].title +
     '</h5><h5 class="text-primary">$' +
     listings[i].rate +
-    ' /night</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p></div></div></div>'
+    ' /night</h5><p class="card-text">' + 
+    listings[i].description +
+    '</p></div></div></div>'
     $('#listings').append(listingCardString);
 });
 
@@ -113,6 +115,7 @@ $.each(listings, function(i){
 // Creating markers and their info window.
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
+    mapId: "7cd2bbf39f8448e6",
     zoom: 12,
     center: { lat: 40.731918, lng: -73.995016 },
   });
@@ -142,7 +145,7 @@ function initMap() {
     "<p>"+ 
     singleListing.description +
     "</p>" +
-    '<button button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullscreenModal">See Details</button>'+
+    '<button button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#fullscreenModal">See Details</button>'+
     "</div>" +
     "</div>";
 
@@ -150,6 +153,7 @@ function initMap() {
       position: gpsData,
       map,
       title: contentString,
+      label: String(listings[i].rate),
       optimized: false,
     });
 
